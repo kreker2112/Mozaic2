@@ -972,7 +972,7 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: start;
-  height: 48.6vh;
+  height: 43.5vh;
   gap: 0;
   overflow-x: hidden; /* Добавлено для горизонтальной прокрутки */
   white-space: nowrap; /* Добавлено для предотвращения переноса строк */

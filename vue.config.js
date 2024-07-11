@@ -5,7 +5,7 @@ module.exports = defineConfig({
   devServer: {
     hot: true,
   },
-  publicPath: "/Mozaic/",
+  publicPath: "/Mozaic2/",
   transpileDependencies: true,
   configureWebpack: {
     plugins: [

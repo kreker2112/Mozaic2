@@ -37,7 +37,7 @@ export default {};
   align-items: center;
   padding: 0 1%;
   box-sizing: border-box;
-  height: 4rem;
+  height: 4.4rem;
   position: fixed;
   bottom: 0;
   left: 0;
