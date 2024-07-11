@@ -144,7 +144,8 @@
     <div class="first-page-content">
       <div class="first-page">
         <div class="upper-content__container">
-          <img class="main-img" src="../images/mosaic2.png" alt="mosaic2" />
+          <div class="main-img"></div>
+
           <img
             src="../images/mosaicpart.png"
             alt="mosaicpart"
@@ -159,8 +160,11 @@
             />
             <button class="callback-button">ЗАМОВИТИ ДЗВіНОК</button>
           </div>
-
-          <div class="left-section">
+        </div>
+        <img src="../images/cases.png" alt="cases" class="cases" />
+        <img src="../images/services.png" alt="services" class="services" />
+        <div class="left-section">
+          <div class="left-section__upper">
             <div class="upper-row">
               <img
                 src="../images/lasergood.png"
@@ -180,18 +184,14 @@
                 class="uniclinic"
               />
             </div>
+          </div>
+          <div class="left-section__middle">
             <div class="middle-row">
               <img
-                src="../images/services.png"
-                alt="services"
-                class="services"
-              />
-              <img
                 src="../images/services-marketing.png"
-                alt="services-marketing"
-                class="services-marketing"
+                alt="marketing"
+                class="marketing"
               />
-
               <img
                 src="../images/analytics.png"
                 alt="analytics"
@@ -633,9 +633,9 @@ export default {
 
 .bricks-frame {
   position: absolute;
-  left: 0.7rem;
-  top: 0.7rem;
-  width: 3rem;
+  left: 0.9rem;
+  top: 0.9rem;
+  width: 3.85rem;
   z-index: 802;
 }
 .bricks-frame:hover {
@@ -879,26 +879,28 @@ export default {
 }
 
 .main-img {
+  background-image: url("../images/mosaic2.png");
   width: 76rem;
   z-index: 1; /* Убедитесь, что z-index у main-img ниже, чем у изображений в left-section */
-  position: relative;
+  position: sticky;
+  top: 0;
 }
 
 .mosaic-part {
   position: absolute;
-  top: 2.5rem;
-  left: 4rem;
-  width: 30%;
+  top: 3rem;
+  left: 5rem;
+  width: 56rem;
   z-index: 1;
 }
 
 .callback__container {
   position: absolute;
-  bottom: 10rem;
-  left: 1rem;
+  bottom: 0.5rem;
+  left: 7rem;
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 1.5rem;
   padding: 1rem;
   z-index: 20;
 }
@@ -934,9 +936,12 @@ export default {
 }
 
 .first-page-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: calc(100vh - 4rem);
-  box-sizing: border-box; /* Убедитесь, что padding и border учитываются в общих размерах */
+  box-sizing: border-box;
 }
 
 .first-page {
@@ -949,43 +954,75 @@ export default {
 .left-section {
   display: flex;
   flex-direction: column;
+  gap: 0;
   width: 100%;
-  height: 76vh;
+  height: 82.45vh;
+  position: relative;
+}
+
+.left-section__upper,
+.left-section__middle {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+}
+
+.left-section__upper {
+  top: 0;
+  left: 70rem;
+  height: 57.69vh;
+  white-space: nowrap;
+}
+
+.left-section__middle {
+  top: 33.1rem;
+  left: 45rem;
+  height: 25vh;
+  overflow-x: hidden;
+  white-space: nowrap;
+  margin-top: -4px;
+}
+
+.left-section__upper img,
+.left-section__middle img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+  flex-grow: 0;
   z-index: 300;
 }
 
-.left-section img {
-  z-index: 300; /* Убедитесь, что z-index выше, чем у main-img */
-  position: relative; /* Убедитесь, что position установлен на relative */
-}
-
 .upper-content__container {
+  position: fixed;
   display: flex;
   flex-direction: row;
   gap: 0;
-  height: 76vh;
-  overflow-x: hidden; /* Добавлено для горизонтальной прокрутки */
-  white-space: nowrap; /* Добавлено для предотвращения переноса строк */
+  height: 82.45vh;
+  overflow-x: hidden;
+  white-space: nowrap;
 }
 
 .upper-row {
+  position: relative;
+  bottom: 0;
   display: flex;
   flex-direction: row;
   justify-content: start;
-  height: 43.5vh;
   gap: 0;
-  overflow-x: hidden; /* Добавлено для горизонтальной прокрутки */
-  white-space: nowrap; /* Добавлено для предотвращения переноса строк */
+  overflow-x: hidden;
+  white-space: nowrap;
   z-index: 300;
 }
 
 .middle-row {
   position: relative;
   display: flex;
-  height: 32.9vh;
   gap: 0;
-  overflow-x: hidden; /* Добавлено для горизонтальной прокрутки */
-  white-space: nowrap; /* Добавлено для предотвращения переноса строк */
+  overflow-x: hidden;
+  white-space: nowrap;
   z-index: 300;
 }
 
@@ -994,24 +1031,36 @@ export default {
   max-width: 100%;
   width: auto;
   height: auto;
-  object-fit: contain; /* или object-fit: cover в зависимости от ваших требований */
+  object-fit: contain;
   flex-shrink: 0;
   flex-grow: 0;
   z-index: 300;
 }
 
+.cases {
+  position: fixed;
+  height: 32.5rem;
+  z-index: 301;
+  left: 70.2rem;
+  bottom: 24.4rem;
+}
+
 .services {
-  position: absolute;
-  height: 100%;
+  position: fixed;
+  height: 14rem;
+  z-index: 301;
+  left: 45rem;
+  bottom: 10rem;
 }
 
 .services-content__container {
+  position: absolute;
+  bottom: 0;
   display: flex;
   gap: 0;
-  height: 17.5%;
   z-index: 2;
-  overflow-x: hidden; /* Добавлено для горизонтальной прокрутки */
-  white-space: nowrap; /* Добавлено для предотвращения переноса строк */
+  overflow-x: hidden;
+  white-space: nowrap;
   z-index: 300;
 }
 
@@ -1020,9 +1069,9 @@ export default {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  height: 9.3rem;
-  overflow-x: hidden; /* Добавлено для горизонтальной прокрутки */
-  white-space: nowrap; /* Добавлено для предотвращения переноса строк */
+  height: 6rem;
+  overflow-x: hidden;
+  white-space: nowrap;
   z-index: 300;
 }
 .lower-row--image_1 {
