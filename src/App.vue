@@ -28,7 +28,7 @@ export default {
 
 .page-container {
   width: 100vw;
-  height: calc(100% - 6rem); /* Adjust height considering the footer */
+  height: calc(100% - 4rem); /* Adjust height considering the footer */
   overflow: hidden;
   position: relative;
 }

@@ -9,7 +9,6 @@
       ПРОБЛЕМУ В 1 КЛІК
     </div>
     <div class="center">
-      <a href="#">ПРО НАС</a>
       <a href="#">МАРКЕТИНГ</a>
       <a href="#">АНАЛІТИКА</a>
       <a href="#">ДИЗАЙН</a>
@@ -38,8 +37,12 @@ export default {};
   align-items: center;
   padding: 0 1%;
   box-sizing: border-box;
-  height: 6rem;
-  flex-shrink: 0;
+  height: 4rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 .footer-frame {
@@ -47,7 +50,7 @@ export default {};
 }
 
 .footer-frame img {
-  width: 90%;
+  width: 70%;
 }
 
 .left {
@@ -62,7 +65,7 @@ export default {};
 
 .center {
   position: relative;
-  width: 40%;
+  width: 30%;
 }
 
 .center a {
@@ -72,7 +75,7 @@ export default {};
   position: relative;
   font-family: "Montserrat";
   font-size: 100%;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .right {
@@ -92,7 +95,7 @@ export default {};
   align-items: center;
 }
 
-@media (max-width: 2560px) {
+/* @media (max-width: 2560px) {
   .center a {
     font-size: 90%;
   }
@@ -170,5 +173,5 @@ export default {};
   .footer {
     display: none;
   }
-}
+} */
 </style>
