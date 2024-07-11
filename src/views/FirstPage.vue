@@ -143,19 +143,76 @@
         <div class="upper-content__container">
           <div class="main-img__container">
             <img class="main-img" src="../images/mosaic2.png" alt="mosaic2" />
+            <img
+              src="../images/mosaicpart.png"
+              alt="mosaicpart"
+              class="mosaic-part"
+            />
           </div>
 
           <div class="left-section">
             <div class="upper-row">
-              <div class="upper-row--image_1"></div>
-              <div class="upper-row--image_2"></div>
+              <div class="upper-row--image_1">
+                <img
+                  src="../images/lasergood.png"
+                  alt="lasergood"
+                  class="lasergood"
+                />
+              </div>
+              <div class="upper-row--image_2">
+                <img
+                  src="../images/smartcover.png"
+                  alt="smartcover"
+                  class="smartcover"
+                />
+              </div>
+              <div class="upper-row--image_3">
+                <img
+                  src="../images/uniclinic.png"
+                  alt="uniclinic"
+                  class="uniclinic"
+                />
+              </div>
             </div>
             <div class="middle-row">
-              <div class="middle-row--image_1"></div>
-              <div class="middle-row--image_2"></div>
-              <div class="middle-row--image_3"></div>
-              <div class="middle-row--image_4"></div>
-              <div class="middle-row--image_5"></div>
+              <img
+                src="../images/services.png"
+                alt="services"
+                class="services"
+              />
+              <div class="middle-row--image_1">
+                <img
+                  src="../images/services-marketing.png"
+                  alt="services-marketing"
+                  class="services-marketing"
+                />
+              </div>
+              <div class="middle-row--image_2">
+                <img
+                  src="../images/analytics.png"
+                  alt="analytics"
+                  class="analytics"
+                />
+              </div>
+
+              <div class="middle-row--image_3">
+                <img src="../images/design.png" alt="design" class="design" />
+              </div>
+
+              <div class="middle-row--image_4">
+                <img
+                  src="../images/socialMedia.png"
+                  alt="socialMedia"
+                  class="social-media"
+                />
+              </div>
+              <div class="middle-row--image_5">
+                <img
+                  src="../images/aboutUs.png"
+                  alt="aboutUs"
+                  class="about-us"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -521,8 +578,16 @@ export default {
 /* Page-content */
 
 .main-img {
-  width: 60rem;
+  width: 90rem;
   height: 100%;
+}
+
+.mosaic-part {
+  position: absolute;
+  top: 2.5rem;
+  left: 4rem;
+  width: 30%;
+  z-index: 1;
 }
 
 .first-page-content {
@@ -542,99 +607,108 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%;
+  gap: 0;
+  /* width: 50%; */
+  /* height: 100%; */
 }
 
 .upper-content__container {
-  height: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+
+  height: 84.65%;
+}
+
+.upper-row,
+.middle-row {
+  margin: 0;
+  padding: 0;
+  gap: 0; /* добавлено */
 }
 
 .upper-row {
   display: flex;
   gap: 0;
-  height: 40%;
+  height: 50%;
 }
 
 .middle-row {
   display: flex;
   gap: 0;
-  height: 35%;
+  height: 34.65%;
+}
+
+.upper-row--image_1 {
+  position: relative;
+  height: 100%;
+  /* width: 50%; */
+}
+
+.services {
+  position: absolute;
+}
+
+.upper-row--image_2 {
+  height: 40%;
+  width: 50%;
+}
+
+.upper-row--image_3 {
+  height: 40%;
+  width: 50%;
+}
+
+.middle-row--image_1 {
+  height: 100%;
+  width: 40%;
+}
+.middle-row--image_2 {
+  height: 100%;
+  width: 20%;
+}
+.middle-row--image_3 {
+  height: 100%;
+  width: 20%;
+}
+.middle-row--image_4 {
+  height: 100%;
+  width: 20%;
+}
+.middle-row--image_5 {
+  height: 100%;
+  width: 20%;
 }
 
 .services-content__container {
   display: flex;
   gap: 0;
-  height: 100%;
+  height: 14%;
+  z-index: 2;
 }
 
 .lower-row {
-  display: flex;
-  gap: 0;
   height: 100%;
 }
-
-.upper-row--image_1 {
-  height: 100%;
-  width: 50%;
-  background-color: #d9d9d9;
-}
-
-.upper-row--image_2 {
-  height: 100%;
-  width: 50%;
-  background-color: #f3f3f3;
-}
-
-.middle-row--image_1 {
-  height: 100%;
-  width: 20%;
-  background-color: #f3f3f3;
-}
-.middle-row--image_2 {
-  height: 100%;
-  width: 20%;
-  background-color: #d9d9d9;
-}
-.middle-row--image_3 {
-  height: 100%;
-  width: 20%;
-  background-color: #f3f3f3;
-}
-.middle-row--image_4 {
-  height: 100%;
-  width: 20%;
-  background-color: #d9d9d9;
-}
-.middle-row--image_5 {
-  height: 100%;
-  width: 20%;
-  background-color: #f3f3f3;
-}
-
 .lower-row--image_1 {
+  width: 100%;
+}
+
+.brand-service {
+  width: 100%;
   height: 100%;
-  width: 25%;
-  background-color: #d9d9d9;
 }
 .lower-row--image_2 {
   height: 100%;
-  width: 25%;
-  background-color: #f3f3f3;
+  width: 100%;
 }
 .lower-row--image_3 {
   height: 100%;
   width: 25%;
-  background-color: #d9d9d9;
 }
 .lower-row--image_4 {
   height: 100%;
   width: 25%;
-  background-color: #f3f3f3;
-}
-
-.left-section,
-.form-component {
-  flex: 1;
 }
 @media (max-width: 767px) {
   .second-page {
