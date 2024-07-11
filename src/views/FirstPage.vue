@@ -337,6 +337,11 @@ export default {
 </script>
 
 <style scoped>
+html,
+body {
+  overflow-y: hidden;
+}
+
 .bricks-frame {
   position: absolute;
   left: 0.7rem;
@@ -592,7 +597,6 @@ export default {
 
 .first-page-content {
   width: 100%;
-  height: 100%;
   overflow-x: auto;
 }
 
@@ -608,16 +612,14 @@ export default {
   flex-direction: column;
   justify-content: space-between;
   gap: 0;
-  /* width: 50%; */
-  /* height: 100%; */
+  height: 100%; /* Ensure this is 100% */
 }
 
 .upper-content__container {
   display: flex;
   flex-direction: row;
   gap: 0;
-
-  height: 84.65%;
+  height: 100%; /* Ensure this is 100% */
 }
 
 .upper-row,
@@ -629,6 +631,8 @@ export default {
 
 .upper-row {
   display: flex;
+  flex-direction: row;
+  justify-content: start;
   gap: 0;
   height: 50%;
 }
@@ -636,27 +640,27 @@ export default {
 .middle-row {
   display: flex;
   gap: 0;
-  height: 34.65%;
+  height: 50%;
 }
 
 .upper-row--image_1 {
   position: relative;
   height: 100%;
-  /* width: 50%; */
+  width: 100%;
+}
+
+.upper-row--image_2 {
+  height: 100%;
+  width: 100%;
+}
+
+.upper-row--image_3 {
+  height: 100%;
+  width: 100%;
 }
 
 .services {
   position: absolute;
-}
-
-.upper-row--image_2 {
-  height: 40%;
-  width: 50%;
-}
-
-.upper-row--image_3 {
-  height: 40%;
-  width: 50%;
 }
 
 .middle-row--image_1 {
