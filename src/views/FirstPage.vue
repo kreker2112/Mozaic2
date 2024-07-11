@@ -358,12 +358,26 @@ export default {
       const scrollFactor2 = 0.3;
       const scrollFactor3 = 0.1;
 
-      document.querySelector(".upper-row").scrollLeft +=
-        event.deltaY * scrollFactor1;
-      document.querySelector(".middle-row").scrollLeft +=
-        event.deltaY * scrollFactor2;
-      document.querySelector(".lower-row").scrollLeft +=
-        event.deltaY * scrollFactor3;
+      const upperRow = document.querySelector(".upper-row");
+      const middleRow = document.querySelector(".middle-row");
+      const lowerRow = document.querySelector(".lower-row");
+
+      const loopScroll = (row, factor) => {
+        row.scrollLeft += event.deltaY * factor;
+        if (row.scrollLeft + row.clientWidth >= row.scrollWidth) {
+          row.scrollLeft = 0;
+        }
+      };
+
+      if (upperRow) {
+        loopScroll(upperRow, scrollFactor1);
+      }
+      if (middleRow) {
+        loopScroll(middleRow, scrollFactor2);
+      }
+      if (lowerRow) {
+        loopScroll(lowerRow, scrollFactor3);
+      }
     };
 
     onMounted(() => {
@@ -395,7 +409,7 @@ export default {
   position: absolute;
   left: 0.7rem;
   top: 0.7rem;
-  width: 3rem;
+  width: 4.2rem;
   z-index: 802;
 }
 .bricks-frame:hover {
@@ -596,247 +610,7 @@ export default {
 
 .contact-item-address::before {
   content: url("../images/path-logo.png");
-  margin-right: 1.1rem;
-}
-
-.menu__socials {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-  gap: 3.5rem;
-  padding: 0.5rem 0;
-}
-
-.menu__socials img {
-  width: 150%;
-}
-
-.footer-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  padding-top: 8rem;
-  background-color: #002d6e;
-  color: #fff;
-}
-
-.footer-icon img {
-  width: 100%;
-}
-
-.footer-text {
-  text-align: center;
-}
-
-/* Page-content */
-
-.bricks-frame {
-  position: absolute;
-  left: 0.9rem;
-  top: 0.9rem;
-  width: 3.85rem;
-  z-index: 802;
-}
-.bricks-frame:hover {
-  cursor: pointer;
-}
-
-/* Styles for desktop menu */
-.desktop-menu {
-  position: fixed;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background-color: #ff6400;
-  z-index: 1000;
-  transition: left 0.3s ease-in-out;
-  flex-direction: column;
-}
-
-.desktop-menu.open {
-  left: 0;
-}
-
-.desktop-menu__close-btn {
-  position: absolute;
-  top: 0.5rem;
-  left: 1rem;
-  font-size: 6rem;
-  font-weight: bolder;
-  cursor: pointer;
-  color: #ffffff;
-}
-
-.desktop-menu__container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
-}
-
-.desktop-menu__header {
-  display: flex;
-  justify-content: flex-end;
-  padding: 1rem;
-  color: #ffffff;
-}
-
-.desktop-menu__content {
-  padding-left: 5%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 5%;
-  width: 58%;
-  text-align: left;
-}
-
-.desktop-menu-item {
-  font-size: 3rem;
-  font-family: "Montserrat";
-  font-weight: 200;
-  cursor: pointer;
-  color: #ffffff;
-  display: flex;
-  justify-content: start;
-  flex-direction: row;
-  align-items: center;
-}
-
-.desktop-menu-item__arrow {
-  margin-left: 10px;
-}
-
-.desktop-menu-item.active {
-  border-bottom: 2px solid #ffffff;
-}
-
-.desktop-menu__dynamic-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding-left: 2rem;
-  gap: 2rem;
-}
-
-.desktop-menu__dynamic-content--item {
-  font-size: 3rem;
-  font-family: "Montserrat";
-  font-weight: bolder;
-  color: #ffffff;
-  cursor: pointer;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  padding: 0.5rem 0;
-  text-decoration: none;
-}
-.desktop-menu-item-about {
-  font-size: 3rem;
-  font-family: "Montserrat";
-  font-weight: bolder;
-  cursor: pointer;
-  color: #ffffff;
-}
-
-.desktop-menu__contact-section-container {
-  width: 42%;
-  background-color: #002d6e;
-  color: #ffffff;
-  padding: 2rem 1rem 1rem 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  gap: 20px;
-}
-.desktop-menu__contact-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-}
-
-.desktop-menu__contact-section__header {
-  display: flex;
-  flex-direction: column;
-  font-size: 3rem;
-  font-family: "Montserrat";
-  justify-self: flex-start;
-  margin: 0 0 4rem 2rem;
-}
-
-.contact-items__container {
-  padding-left: 5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  text-align: center;
-  gap: 2rem;
-}
-
-.desktop-menu__socials {
-  display: flex;
-  justify-content: flex-start;
-  gap: 3rem;
-  padding: 0.5rem 0;
-  margin-left: 2rem;
-  margin-top: 5%;
-}
-
-.desktop-menu__facebook-logo {
-  width: 150%;
-}
-
-.desktop-menu__instagram-logo {
-  width: 150%;
-}
-
-.contacts {
-  margin-top: 2rem;
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-}
-
-.contact-item-email,
-.contact-item-phone,
-.contact-item-telegram,
-.contact-item-address {
-  display: flex;
-  align-items: center;
-  padding: 0.5rem 0;
-  font-family: "Montserrat";
-  font-size: 1.2rem;
-  margin-left: 2rem;
-}
-
-.contact-item-email::before {
-  content: url("../images/letter-logo.png");
-  margin-right: 1.1rem;
-}
-
-.contact-item-phone::before {
-  content: url("../images/phone-logo.png");
-  margin-right: 1.1rem;
-}
-
-.contact-item-telegram::before {
-  content: url("../images/telegram_logo.png");
-  margin-right: 1.1rem;
-}
-
-.contact-item-address::before {
-  content: url("../images/path-logo.png");
-  margin-right: 1.1rem;
+  margin-right: 1.1рем;
 }
 
 .menu__socials {
@@ -1026,15 +800,25 @@ export default {
   z-index: 300;
 }
 
-.upper-row img,
-.middle-row img {
-  max-width: 100%;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  flex-shrink: 0;
-  flex-grow: 0;
+.lower-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 6rem;
+  overflow-x: hidden;
+  white-space: nowrap;
   z-index: 300;
+}
+
+.image-wrapper {
+  flex: 0 0 auto;
+}
+
+.image {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
 .cases {
@@ -1059,9 +843,6 @@ export default {
   display: flex;
   gap: 0;
   z-index: 2;
-  overflow-x: hidden;
-  white-space: nowrap;
-  z-index: 300;
 }
 
 .lower-row {

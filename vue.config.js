@@ -1,5 +1,6 @@
 const { defineConfig } = require("@vue/cli-service");
 const webpack = require("webpack");
+const path = require("path");
 
 module.exports = defineConfig({
   devServer: {
@@ -15,5 +16,22 @@ module.exports = defineConfig({
         __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: JSON.stringify(false),
       }),
     ],
+    resolve: {
+      alias: {
+        "@": path.resolve(__dirname, "src"),
+      },
+    },
+    module: {
+      rules: [
+        {
+          test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+          loader: "url-loader",
+          options: {
+            limit: 10000,
+            name: "img/[name].[hash:7].[ext]",
+          },
+        },
+      ],
+    },
   },
 });
