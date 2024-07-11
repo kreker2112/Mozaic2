@@ -1020,7 +1020,7 @@ export default {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  height: 10.2rem;
+  height: 9.3rem;
   overflow-x: hidden; /* Добавлено для горизонтальной прокрутки */
   white-space: nowrap; /* Добавлено для предотвращения переноса строк */
   z-index: 300;
