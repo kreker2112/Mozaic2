@@ -1003,43 +1003,50 @@ export default {
   background: transparent;
 }
 
-@media only screen and (min-width: 1920px) and (max-width: 1920px) and (min-height: 1080px) and (max-height: 1080px) {
+@media only screen and (min-width: 1920px) and (max-width: 1920px) and (min-height: 1083px) and (max-height: 1083px) {
   .upper-content__container {
     height: 84vh;
   }
   .callback__container {
     bottom: 2rem;
-    left: 4rem;
+    left: 2rem;
     gap: 1.5rem;
   }
   .callback-number {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    padding: 1rem;
   }
   .callback-button {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
+    padding: 0.7rem 1rem;
   }
   .cases {
-    height: 39.7rem;
-    bottom: 27.8rem;
+    height: 35.9rem;
+    left: 64.4rem;
+    bottom: 31.7rem;
   }
   .services {
-    height: 16.5rem;
-    bottom: 11rem;
+    height: 20.1rem;
+    left: 35rem;
+    bottom: 11.5rem;
   }
   .left-section {
     height: 84vh;
   }
   .left-section__upper {
-    height: 59vh;
+    left: 64.3rem;
+    height: 53.4vh;
   }
   .left-section__middle {
-    top: 40.09rem;
+    top: 36.26rem;
+    left: 35rem;
+    height: 30vh;
   }
   .services-content__container {
     bottom: 0.3rem;
   }
   .lower-row {
-    height: 6.5rem;
+    height: 7.1rem;
   }
 }
 
