@@ -984,6 +984,18 @@ export default {
   background: transparent;
 }
 
+@media only screen and (min-width: 1920px) and (max-width: 1920px) and (min-height: 963px) and (max-height: 963px) {
+  .left-section {
+    height: 83.4vh;
+  }
+  .left-section__middle {
+    top: 34.8rem;
+  }
+  .services-content__container {
+    bottom: 0.3rem;
+  }
+}
+
 @media (max-width: 767px) {
   .second-page {
     width: 1710px;
