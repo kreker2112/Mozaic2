@@ -1018,7 +1018,7 @@ export default {
   }
   .callback-button {
     font-size: 0.9rem;
-    padding: 0.7rem 1rem;
+    padding: 0.8rem;
   }
   .cases {
     height: 35.9rem;
@@ -1034,10 +1034,12 @@ export default {
     height: 84vh;
   }
   .left-section__upper {
+    width: 125.61rem;
     left: 64.3rem;
     height: 53.4vh;
   }
   .left-section__middle {
+    width: 154.95rem;
     top: 36.26rem;
     left: 35rem;
     height: 30vh;
