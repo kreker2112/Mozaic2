@@ -158,7 +158,7 @@
               type="text"
               placeholder="номер телефону"
             />
-            <button class="callback-button">ЗАМОВИТИ ДЗВіНОК</button>
+            <button class="callback-button">ЗАМОВИТИ ДЗВІНОК</button>
           </div>
         </div>
         <img src="../images/cases.png" alt="cases" class="cases" />
@@ -166,6 +166,24 @@
         <div class="left-section">
           <div class="left-section__upper">
             <div class="upper-row">
+              <img
+                src="../images/lasergood.png"
+                alt="lasergood"
+                class="lasergood"
+              />
+
+              <img
+                src="../images/smartcover.png"
+                alt="smartcover"
+                class="smartcover"
+              />
+
+              <img
+                src="../images/uniclinic.png"
+                alt="uniclinic"
+                class="uniclinic"
+              />
+
               <img
                 src="../images/lasergood.png"
                 alt="lasergood"
@@ -207,11 +225,85 @@
               />
 
               <img src="../images/aboutUs.png" alt="aboutUs" class="about-us" />
+
+              <img
+                src="../images/services-marketing.png"
+                alt="marketing"
+                class="marketing"
+              />
+              <img
+                src="../images/analytics.png"
+                alt="analytics"
+                class="analytics"
+              />
+
+              <img src="../images/design.png" alt="design" class="design" />
+
+              <img
+                src="../images/socialMedia.png"
+                alt="socialMedia"
+                class="social-media"
+              />
+
+              <img src="../images/aboutUs.png" alt="aboutUs" class="about-us" />
             </div>
           </div>
         </div>
         <div class="services-content__container">
           <div class="lower-row">
+            <img
+              src="../images/packBrandBgrnd.png"
+              alt="packBrandBgrnd"
+              class="brand-service"
+            />
+            <img src="../images/wantlogo.png" alt="wantlogo" class="wantlogo" />
+            <img
+              src="../images/promoteBusiness.png"
+              alt="promoteBusiness"
+              class="promoteBusiness"
+            />
+            <img
+              src="../images/coolDesign.png"
+              alt="coolDesign"
+              class="coolDesign"
+            />
+            <img
+              src="../images/salesSite.png"
+              alt="salesSite"
+              class="salesSite"
+            />
+            <img
+              src="../images/conceptions.png"
+              alt="conceptions"
+              class="conceptions"
+            />
+            <img src="../images/ideas.png" alt="ideas" class="ideas" />
+            <img
+              src="../images/strategies.png"
+              alt="strategies"
+              class="strategies"
+            />
+            <img src="../images/audit.png" alt="audit" class="audit" />
+            <img
+              src="../images/clearAnalytics.png"
+              alt="clearAnalytics"
+              class="clearAnalytics"
+            />
+            <img
+              src="../images/makeAccounts.png"
+              alt="makeAccounts"
+              class="makeAccounts"
+            />
+            <img
+              src="../images/organicPromote.png"
+              alt="organicPromote"
+              class="organicPromote"
+            />
+            <img
+              src="../images/googleAds.png"
+              alt="googleAds"
+              class="googleAds"
+            />
             <img
               src="../images/packBrandBgrnd.png"
               alt="packBrandBgrnd"
@@ -698,10 +790,10 @@ export default {
   color: white;
   border: 1px solid white;
   border-radius: 6.86px;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1.2rem;
   font-family: "Montserrat";
   font-weight: 900;
-  font-size: 0.8rem;
+  font-size: 1rem;
   cursor: pointer;
 }
 
@@ -750,6 +842,7 @@ export default {
 }
 
 .left-section__middle {
+  width: 144.7rem;
   top: 33.1rem;
   left: 45rem;
   height: 25vh;
@@ -838,6 +931,7 @@ export default {
 }
 
 .services-content__container {
+  width: 190rem;
   position: absolute;
   bottom: 0;
   display: flex;

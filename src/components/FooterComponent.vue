@@ -54,7 +54,7 @@ export default {};
 }
 
 .left {
-  margin-left: 1%;
+  margin-left: 0.1rem;
   display: flex;
   flex-direction: column;
   flex: 1;
