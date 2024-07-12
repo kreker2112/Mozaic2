@@ -201,6 +201,23 @@
                 alt="uniclinic"
                 class="uniclinic"
               />
+              <img
+                src="../images/lasergood.png"
+                alt="lasergood"
+                class="lasergood"
+              />
+
+              <img
+                src="../images/smartcover.png"
+                alt="smartcover"
+                class="smartcover"
+              />
+
+              <img
+                src="../images/uniclinic.png"
+                alt="uniclinic"
+                class="uniclinic"
+              />
             </div>
           </div>
           <div class="left-section__middle">
@@ -446,9 +463,9 @@ export default {
       const container = event.currentTarget;
       container.scrollLeft += event.deltaY;
 
-      const scrollFactor1 = 0.5;
-      const scrollFactor2 = 0.3;
-      const scrollFactor3 = 0.1;
+      const scrollFactor1 = 1.2;
+      const scrollFactor2 = 0.8;
+      const scrollFactor3 = 0.3;
 
       const upperRow = document.querySelector(".upper-row");
       const middleRow = document.querySelector(".middle-row");
@@ -746,6 +763,8 @@ export default {
 
 .main-img {
   background-image: url("../images/mosaic2.png");
+  background-size: cover;
+  background-position: center;
   width: 76rem;
   z-index: 1; /* Убедитесь, что z-index у main-img ниже, чем у изображений в left-section */
   position: sticky;
@@ -984,15 +1003,43 @@ export default {
   background: transparent;
 }
 
-@media only screen and (min-width: 1920px) and (max-width: 1920px) and (min-height: 963px) and (max-height: 963px) {
+@media only screen and (min-width: 1920px) and (max-width: 1920px) and (min-height: 1080px) and (max-height: 1080px) {
+  .upper-content__container {
+    height: 84vh;
+  }
+  .callback__container {
+    bottom: 2rem;
+    left: 4rem;
+    gap: 1.5rem;
+  }
+  .callback-number {
+    font-size: 1.2rem;
+  }
+  .callback-button {
+    font-size: 1.2rem;
+  }
+  .cases {
+    height: 39.7rem;
+    bottom: 27.8rem;
+  }
+  .services {
+    height: 16.5rem;
+    bottom: 11rem;
+  }
   .left-section {
-    height: 83.4vh;
+    height: 84vh;
+  }
+  .left-section__upper {
+    height: 59vh;
   }
   .left-section__middle {
-    top: 34.8rem;
+    top: 40.09rem;
   }
   .services-content__container {
     bottom: 0.3rem;
+  }
+  .lower-row {
+    height: 6.5rem;
   }
 }
 
