@@ -1077,8 +1077,31 @@ export default {
 }
 
 @media only screen and (min-width: 1920px) and (max-width: 1920px) and (min-height: 1083px) and (max-height: 1083px) {
+  .main-content__container {
+    height: calc(100vh - 5.1rem);
+  }
+  .bricks-frame {
+    left: 1rem;
+    top: 1rem;
+    width: 3rem;
+  }
+  .main-img {
+    width: 90rem;
+    background-position: 0 -10px;
+  }
+  .first-page-content {
+    height: calc(100vh - 5.1rem);
+  }
+  .first-page {
+    height: calc(100vh - 5.1rem);
+  }
   .upper-content__container {
-    height: 84vh;
+    height: 81.95vh;
+  }
+  .mosaic-part {
+    top: 5.8rem;
+    left: 11.2rem;
+    width: 114rem;
   }
   .callback__container {
     bottom: 2rem;
@@ -1104,7 +1127,7 @@ export default {
     bottom: 11.5rem;
   }
   .left-section {
-    height: 84vh;
+    height: 81.95vh;
   }
   .left-section__upper {
     width: 125.61rem;
@@ -1118,7 +1141,7 @@ export default {
     height: 30vh;
   }
   .services-content__container {
-    bottom: 0.3rem;
+    bottom: 0;
   }
   .lower-row {
     height: 7.11rem;
