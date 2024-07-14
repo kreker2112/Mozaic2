@@ -132,6 +132,34 @@ export default {};
   }
 }
 
+@media only screen and (min-width: 1920px) and (max-width: 1920px) and (min-height: 963px) and (max-height: 963px) {
+  .footer {
+    height: 4.6rem;
+  }
+  .footer-frame {
+    margin-left: 0.5rem;
+  }
+  .footer-frame img {
+    width: 2.6rem;
+  }
+  .center a {
+    font-size: 100%;
+  }
+  .left {
+    margin-left: 1rem;
+    font-size: 80%;
+  }
+  .facebook_image {
+    width: 0.7rem;
+  }
+  .instagram_image {
+    width: 1.6rem;
+  }
+  .right a {
+    font-size: 1.7rem;
+  }
+}
+
 /* @media (max-width: 2560px) {
   .center a {
     font-size: 90%;
