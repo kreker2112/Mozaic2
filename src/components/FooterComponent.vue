@@ -37,7 +37,7 @@ export default {};
   align-items: center;
   padding: 0 1%;
   box-sizing: border-box;
-  height: 4.4rem;
+  height: 4rem;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -50,16 +50,15 @@ export default {};
 }
 
 .footer-frame img {
-  width: 70%;
+  width: 60%;
 }
 
 .left {
-  margin-left: 0.1rem;
   display: flex;
   flex-direction: column;
   flex: 1;
   font-family: "Montserrat";
-  font-size: 100%;
+  font-size: 90%;
   font-weight: bold;
 }
 

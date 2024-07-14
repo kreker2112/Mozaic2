@@ -516,9 +516,9 @@ export default {
 <style>
 .bricks-frame {
   position: absolute;
-  left: 0.7rem;
-  top: 0.7rem;
-  width: 4.2rem;
+  left: 0.8rem;
+  top: 0.8rem;
+  width: 3.9rem;
   z-index: 802;
 }
 .bricks-frame:hover {
@@ -764,7 +764,8 @@ export default {
 .main-img {
   background-image: url("../images/mosaic2.png");
   background-size: cover;
-  background-position: center;
+  background-position: -2%;
+  background-repeat: no-repeat;
   width: 76rem;
   z-index: 1; /* Убедитесь, что z-index у main-img ниже, чем у изображений в left-section */
   position: sticky;
@@ -773,19 +774,19 @@ export default {
 
 .mosaic-part {
   position: absolute;
-  top: 3rem;
+  top: 2.8rem;
   left: 5rem;
-  width: 56rem;
+  width: 50rem;
   z-index: 1;
 }
 
 .callback__container {
   position: absolute;
-  bottom: 0.5rem;
-  left: 7rem;
+  bottom: 1.8rem;
+  left: 4rem;
   display: flex;
   flex-direction: row;
-  gap: 1.5rem;
+  gap: 3rem;
   padding: 1rem;
   z-index: 20;
 }
@@ -855,16 +856,16 @@ export default {
 
 .left-section__upper {
   top: 0;
-  left: 70rem;
-  height: 57.69vh;
+  left: 63.4rem;
+  height: 51vh;
   white-space: nowrap;
 }
 
 .left-section__middle {
   width: 144.7rem;
-  top: 33.1rem;
-  left: 45rem;
-  height: 25vh;
+  top: 29rem;
+  left: 40rem;
+  height: 30.54vh;
   overflow-x: hidden;
   white-space: nowrap;
   margin-top: -4px;
@@ -935,18 +936,18 @@ export default {
 
 .cases {
   position: fixed;
-  height: 32.5rem;
+  height: 28.7rem;
   z-index: 301;
-  left: 70.2rem;
-  bottom: 24.4rem;
+  left: 63.5rem;
+  top: 0;
 }
 
 .services {
   position: fixed;
-  height: 14rem;
+  height: 17.3rem;
   z-index: 301;
-  left: 45rem;
-  bottom: 10rem;
+  left: 40rem;
+  bottom: 10.89rem;
 }
 
 .services-content__container {
@@ -963,7 +964,7 @@ export default {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  height: 6rem;
+  height: 6.9rem;
   overflow-x: hidden;
   white-space: nowrap;
   z-index: 300;
@@ -1004,6 +1005,55 @@ export default {
 }
 
 @media only screen and (min-width: 1920px) and (max-width: 1920px) and (min-height: 1083px) and (max-height: 1083px) {
+  .upper-content__container {
+    height: 84vh;
+  }
+  .callback__container {
+    bottom: 2rem;
+    left: 2rem;
+    gap: 1.5rem;
+  }
+  .callback-number {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  .callback-button {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+  .cases {
+    height: 35.9rem;
+    left: 64.4rem;
+    bottom: 31.7rem;
+  }
+  .services {
+    height: 20.1rem;
+    left: 35rem;
+    bottom: 11.5rem;
+  }
+  .left-section {
+    height: 84vh;
+  }
+  .left-section__upper {
+    width: 125.61rem;
+    left: 64.3rem;
+    height: 53.4vh;
+  }
+  .left-section__middle {
+    width: 154.95rem;
+    top: 36.26rem;
+    left: 35rem;
+    height: 30vh;
+  }
+  .services-content__container {
+    bottom: 0.3rem;
+  }
+  .lower-row {
+    height: 7.11rem;
+  }
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 1920px) and (min-height: 963px) and (max-height: 963px) {
   .upper-content__container {
     height: 84vh;
   }
