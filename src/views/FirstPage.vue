@@ -1003,7 +1003,129 @@ export default {
   background: transparent;
 }
 
+@media only screen and (min-width: 3840px) and (max-width: 3840px) and (min-height: 2043px) and (max-height: 2043px) {
+  .main-content__container {
+    height: calc(100vh - 9rem);
+  }
+  .bricks-frame {
+    left: 2rem;
+    top: 2rem;
+    width: 8rem;
+  }
+  .main-img {
+    width: 150rem;
+    background-position: 0 -10px;
+  }
+  .first-page-content {
+    height: calc(100vh - 9rem);
+  }
+  .first-page {
+    height: calc(100vh - 9rem);
+  }
+  .upper-content__container {
+    height: 84vh;
+  }
+  .mosaic-part {
+    top: 5.8rem;
+    left: 11.2rem;
+    width: 114rem;
+  }
+  .callback__container {
+    bottom: 6rem;
+    left: 6rem;
+    gap: 2rem;
+  }
+  .callback-number {
+    font-size: 3rem;
+    padding: 1rem;
+  }
+  .callback-button {
+    font-size: 2.9rem;
+    padding: 1.5rem;
+  }
+  .cases {
+    height: 65.6rem;
+    left: 144.7rem;
+    bottom: 62rem;
+  }
+  .services {
+    height: 38.5rem;
+    left: 90rem;
+    bottom: 23.5rem;
+  }
+  .left-section {
+    height: 84vh;
+  }
+  .left-section__upper {
+    width: 246rem;
+    left: 144.5rem;
+    height: 51.45vh;
+  }
+  .left-section__middle {
+    width: 300.5rem;
+    top: 65.9rem;
+    left: 90rem;
+    height: 30.3vh;
+  }
+  .services-content__container {
+    width: 390.5rem;
+    bottom: 0;
+  }
+  .lower-row {
+    height: 14.5rem;
+  }
+}
+
 @media only screen and (min-width: 1920px) and (max-width: 1920px) and (min-height: 1083px) and (max-height: 1083px) {
+  .upper-content__container {
+    height: 84vh;
+  }
+  .callback__container {
+    bottom: 2rem;
+    left: 2rem;
+    gap: 1.5rem;
+  }
+  .callback-number {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  .callback-button {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+  .cases {
+    height: 35.9rem;
+    left: 64.4rem;
+    bottom: 31.7rem;
+  }
+  .services {
+    height: 20.1rem;
+    left: 35rem;
+    bottom: 11.5rem;
+  }
+  .left-section {
+    height: 84vh;
+  }
+  .left-section__upper {
+    width: 125.61rem;
+    left: 64.3rem;
+    height: 53.4vh;
+  }
+  .left-section__middle {
+    width: 154.95rem;
+    top: 36.26rem;
+    left: 35rem;
+    height: 30vh;
+  }
+  .services-content__container {
+    bottom: 0.3rem;
+  }
+  .lower-row {
+    height: 7.11rem;
+  }
+}
+
+@media (max-width: 1920px) {
   .upper-content__container {
     height: 84vh;
   }
