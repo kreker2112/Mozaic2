@@ -1004,7 +1004,225 @@ export default {
   background: transparent;
 }
 
+@media only screen and (min-width: 3840px) and (max-width: 3840px) and (min-height: 2043px) and (max-height: 2043px) {
+  .main-content__container {
+    height: calc(100vh - 9rem);
+  }
+  .bricks-frame {
+    left: 2rem;
+    top: 2rem;
+    width: 8rem;
+  }
+  .main-img {
+    width: 150rem;
+    background-position: 0 -10px;
+  }
+  .first-page-content {
+    height: calc(100vh - 9rem);
+  }
+  .first-page {
+    height: calc(100vh - 9rem);
+  }
+  .upper-content__container {
+    height: 84vh;
+  }
+  .mosaic-part {
+    top: 5.8rem;
+    left: 11.2rem;
+    width: 114rem;
+  }
+  .callback__container {
+    bottom: 6rem;
+    left: 6rem;
+    gap: 2rem;
+  }
+  .callback-number {
+    font-size: 3rem;
+    padding: 1rem;
+  }
+  .callback-button {
+    font-size: 2.9rem;
+    padding: 1.5rem;
+  }
+  .cases {
+    height: 65.6rem;
+    left: 144.7rem;
+    bottom: 62rem;
+  }
+  .services {
+    height: 38.5rem;
+    left: 90rem;
+    bottom: 23.5rem;
+  }
+  .left-section {
+    height: 84vh;
+  }
+  .left-section__upper {
+    width: 246rem;
+    left: 144.5rem;
+    height: 51.45vh;
+  }
+  .left-section__middle {
+    width: 300.5rem;
+    top: 65.9rem;
+    left: 90rem;
+    height: 30.3vh;
+  }
+  .services-content__container {
+    width: 390.5rem;
+    bottom: 0;
+  }
+  .lower-row {
+    height: 14.5rem;
+  }
+}
+
 @media only screen and (min-width: 1920px) and (max-width: 1920px) and (min-height: 1083px) and (max-height: 1083px) {
+  .main-content__container {
+    height: calc(100vh - 5.7rem);
+  }
+  .bricks-frame {
+    left: 1rem;
+    top: 1rem;
+    width: 3rem;
+  }
+  .main-img {
+    width: 90rem;
+    background-position: 0 -10px;
+  }
+  .first-page-content {
+    height: calc(100vh - 5.7rem);
+  }
+  .first-page {
+    height: calc(100vh - 5.7rem);
+  }
+  .upper-content__container {
+    height: 81.95vh;
+  }
+  .mosaic-part {
+    top: 5.8rem;
+    left: 11.2rem;
+    width: 70rem;
+  }
+  .callback__container {
+    bottom: 2rem;
+    left: 2rem;
+    gap: 1.5rem;
+  }
+  .callback-number {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  .callback-button {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+  .cases {
+    height: 35.9rem;
+    left: 64.4rem;
+    bottom: 31.7rem;
+  }
+  .services {
+    height: 20.1rem;
+    left: 35rem;
+    bottom: 11.5rem;
+  }
+  .left-section {
+    height: 81.95vh;
+  }
+  .left-section__upper {
+    width: 125.61rem;
+    left: 70rem;
+    height: 48.5vh;
+  }
+  .left-section__middle {
+    width: 154.95rem;
+    top: 33rem;
+    left: 47rem;
+    height: 32.8vh;
+  }
+  .services-content__container {
+    bottom: 0;
+  }
+  .lower-row {
+    height: 7.11rem;
+  }
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 1920px) and (min-height: 963px) and (max-height: 963px) {
+  .main-content__container {
+    height: calc(100vh - 4.6rem);
+  }
+  .bricks-frame {
+    left: 1rem;
+    top: 1rem;
+    width: 3.8rem;
+  }
+  .main-img {
+    width: 90rem;
+    background-position: 0;
+  }
+  .first-page-content {
+    height: calc(100vh - 4.6rem);
+  }
+  .first-page {
+    height: calc(100vh - 4.6rem);
+  }
+  .upper-content__container {
+    height: 84vh;
+  }
+  .mosaic-part {
+    top: 2.9rem;
+    left: 5.3rem;
+    width: 54rem;
+  }
+  .callback__container {
+    bottom: 1.9rem;
+    left: 4rem;
+    gap: 2rem;
+  }
+  .callback-number {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+  .callback-button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  .cases {
+    height: 18.25rem;
+    left: 43rem;
+    bottom: 10.5rem;
+  }
+  .services {
+    height: 31.5rem;
+    left: 68.34rem;
+    bottom: 28.8rem;
+  }
+  .left-section {
+    height: 90vh;
+  }
+  .left-section__upper {
+    width: 246rem;
+    left: 68.4rem;
+    height: 52.29vh;
+  }
+  .left-section__middle {
+    width: 271.4rem;
+    top: 31.7rem;
+    left: 43rem;
+    height: 30.15vh;
+  }
+  .services-content__container {
+    width: 314.4rem;
+    bottom: 0;
+  }
+  .lower-row {
+    height: 6rem;
+  }
+}
+
+/* @media (max-width: 1920px) {
   .upper-content__container {
     height: 84vh;
   }
@@ -1051,7 +1269,7 @@ export default {
   .lower-row {
     height: 7.11rem;
   }
-}
+} */
 
 @media only screen and (min-width: 1920px) and (max-width: 1920px) and (min-height: 963px) and (max-height: 963px) {
   .upper-content__container {

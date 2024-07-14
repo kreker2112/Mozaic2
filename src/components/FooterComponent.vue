@@ -15,9 +15,17 @@
       <a href="#">ПРОСУВАННЯ</a>
     </div>
     <div class="right">
-      <a href="#"><img src="../images/logos/facebook.png" alt="facebook" /></a>
       <a href="#"
-        ><img src="../images/logos/instagram.png" alt="instagram"
+        ><img
+          class="facebook_image"
+          src="../images/logos/facebook.png"
+          alt="facebook"
+      /></a>
+      <a href="#"
+        ><img
+          class="instagram_image"
+          src="../images/logos/instagram.png"
+          alt="instagram"
       /></a>
       <a href="tel:08001234567">0 800 123 45 67</a>
     </div>
@@ -74,7 +82,6 @@ export default {};
   position: relative;
   font-family: "Montserrat";
   font-size: 100%;
-  /* font-weight: bold; */
 }
 
 .right {
@@ -89,9 +96,95 @@ export default {};
 .right a {
   color: #ffffff;
   text-decoration: none;
+  font-family: "Montserrat";
+  font-weight: 100;
   font-size: 180%;
   display: flex;
   align-items: center;
+}
+
+@media only screen and (min-width: 3840px) and (max-width: 3840px) and (min-height: 2043px) and (max-height: 2043px) {
+  .footer {
+    height: 9rem;
+  }
+  .footer-frame {
+    margin-left: 1rem;
+  }
+  .footer-frame img {
+    width: 5rem;
+  }
+  .center a {
+    font-size: 180%;
+  }
+  .left {
+    margin-left: 1rem;
+    font-size: 150%;
+  }
+  .facebook_image {
+    width: 1.2rem;
+  }
+  .instagram_image {
+    width: 2.5rem;
+  }
+  .right a {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 1920px) and (min-height: 1083px) and (max-height: 1083px) {
+  .footer {
+    height: 5.7rem;
+  }
+  .footer-frame {
+    margin-left: 0.5rem;
+  }
+  .footer-frame img {
+    width: 3rem;
+  }
+  .center a {
+    font-size: 120%;
+  }
+  .left {
+    margin-left: 1rem;
+    font-size: 100%;
+  }
+  .facebook_image {
+    width: 0.9rem;
+  }
+  .instagram_image {
+    width: 2rem;
+  }
+  .right a {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 1920px) and (min-height: 963px) and (max-height: 963px) {
+  .footer {
+    height: 4.6rem;
+  }
+  .footer-frame {
+    margin-left: 0.5rem;
+  }
+  .footer-frame img {
+    width: 2.6rem;
+  }
+  .center a {
+    font-size: 100%;
+  }
+  .left {
+    margin-left: 1rem;
+    font-size: 80%;
+  }
+  .facebook_image {
+    width: 0.7rem;
+  }
+  .instagram_image {
+    width: 1.6rem;
+  }
+  .right a {
+    font-size: 1.7rem;
+  }
 }
 
 /* @media (max-width: 2560px) {
