@@ -1131,8 +1131,8 @@ export default {
   }
   .left-section__upper {
     width: 125.61rem;
-    left: 64.3rem;
-    height: 53.4vh;
+    left: 70rem;
+    height: 48.5vh;
   }
   .left-section__middle {
     width: 154.95rem;
