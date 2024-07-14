@@ -134,7 +134,7 @@ export default {};
 
 @media only screen and (min-width: 1920px) and (max-width: 1920px) and (min-height: 1083px) and (max-height: 1083px) {
   .footer {
-    height: 5.1rem;
+    height: 5.7rem;
   }
   .footer-frame {
     margin-left: 0.5rem;
