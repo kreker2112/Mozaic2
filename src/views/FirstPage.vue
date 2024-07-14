@@ -1098,7 +1098,7 @@ export default {
     bottom: 0.3rem;
   }
   .lower-row {
-    height: 7.11rem;
+    height: 7.6rem;
   }
 }
 
