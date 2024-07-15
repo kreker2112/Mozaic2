@@ -272,83 +272,31 @@ export default {};
   }
 }
 
-/* @media (max-width: 2560px) {
-  .center a {
-    font-size: 90%;
+@media only screen and (min-width: 1600px) and (max-width: 1600px) and (min-height: 783px) and (max-height: 783px) {
+  .footer {
+    height: 4.1rem;
   }
-}
-
-@media (max-width: 2304px) {
-  .center a {
-    font-size: 120%;
+  .footer-frame {
+    margin-left: 0.5rem;
   }
-}
-
-@media only screen and (min-width: 1920px) and (max-width: 1920px) and (min-height: 912px) and (max-height: 912px) {
-  .center a {
-    font-size: 120%;
+  .footer-frame img {
+    width: 2.6rem;
   }
-}
-
-@media (max-width: 1400px) {
   .center a {
+    font-size: 85%;
+  }
+  .left {
+    margin-left: 1rem;
     font-size: 80%;
   }
-}
-
-@media (max-width: 1280px) {
-  .center a {
-    font-size: 80%;
+  .facebook_image {
+    width: 0.6rem;
   }
-}
-@media only screen and (min-width: 1180px) and (max-width: 1180px) and (min-height: 820px) and (max-height: 820px) {
-  .center a {
-    font-size: 70%;
+  .instagram_image {
+    width: 1.5rem;
   }
   .right a {
-    font-size: 160%;
+    font-size: 1.5rem;
   }
 }
-@media (max-width: 1024px) {
-  .center a {
-    font-size: 65%;
-  }
-  .right a {
-    font-size: 150%;
-  }
-}
-
-@media only screen and (min-width: 1024px) and (max-width: 1024px) and (min-height: 1366px) and (max-height: 1366px) {
-  .footer {
-    display: none;
-  }
-}
-@media only screen and (min-width: 1024px) and (max-width: 1024px) and (min-height: 768px) and (max-height: 768px) {
-  .center a {
-    font-size: 60%;
-  }
-  .right a {
-    font-size: 140%;
-  }
-}
-@media only screen and (min-width: 1024px) and (max-width: 1024px) and (min-height: 600px) and (max-height: 600px) {
-  .right a {
-    font-size: 120%;
-  }
-}
-@media only screen and (min-width: 820px) and (max-width: 820px) and (min-height: 1180px) and (max-height: 1180px) {
-  .footer {
-    display: none;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 768px) and (max-height: 1024px) and (min-height: 1024px) {
-  .footer {
-    display: none;
-  }
-}
-@media (max-width: 767px) {
-  .footer {
-    display: none;
-  }
-} */
 </style>

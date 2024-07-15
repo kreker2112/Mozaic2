@@ -1440,4 +1440,77 @@ export default {
     height: 6rem;
   }
 }
+
+@media only screen and (min-width: 1600px) and (max-width: 1600px) and (min-height: 783px) and (max-height: 783px) {
+  .main-content__container {
+    height: calc(100vh - 4.1rem);
+  }
+  .bricks-frame {
+    left: 0.6rem;
+    top: 0.6rem;
+    width: 3.2rem;
+  }
+  .main-img {
+    width: 70rem;
+    background-position: 0 -2px;
+  }
+  .first-page-content {
+    height: calc(100vh - 4.1rem);
+  }
+  .first-page {
+    height: calc(100vh - 4.1rem);
+  }
+  .upper-content__container {
+    height: 84vh;
+  }
+  .mosaic-part {
+    top: 2.3rem;
+    left: 4.2rem;
+    width: 43.8rem;
+  }
+  .callback__container {
+    bottom: 1.6rem;
+    left: 4rem;
+    gap: 2rem;
+  }
+  .callback-number {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+  .callback-button {
+    font-size: 0.9rem;
+    padding: 0.8rem 0.5rem;
+  }
+  .cases {
+    height: 25.4rem;
+    left: 55.4rem;
+    top: 0;
+  }
+  .services {
+    height: 14.75rem;
+    left: 34.8rem;
+    bottom: 8.8rem;
+  }
+  .left-section {
+    height: 84vh;
+  }
+  .left-section__upper {
+    width: 194.75rem;
+    left: 55.4rem;
+    height: 52vh;
+  }
+  .left-section__middle {
+    width: 215.1rem;
+    top: 25.6rem;
+    left: 35rem;
+    height: 30.2vh;
+  }
+  .services-content__container {
+    width: 250.1rem;
+    bottom: 0;
+  }
+  .lower-row {
+    height: 4.8rem;
+  }
+}
 </style>
