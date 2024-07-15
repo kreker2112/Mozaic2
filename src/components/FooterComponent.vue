@@ -326,4 +326,31 @@ export default {};
     font-size: 1.2rem;
   }
 }
+@media only screen and (min-width: 1440px) and (max-width: 1440px) and (min-height: 783px) and (max-height: 783px) {
+  .footer {
+    height: 3.2rem;
+  }
+  .footer-frame {
+    margin-left: 0.5rem;
+  }
+  .footer-frame img {
+    width: 1.8rem;
+  }
+  .center a {
+    font-size: 70%;
+  }
+  .left {
+    margin-left: 0.6rem;
+    font-size: 60%;
+  }
+  .facebook_image {
+    width: 0.6rem;
+  }
+  .instagram_image {
+    width: 1.2rem;
+  }
+  .right a {
+    font-size: 1.2rem;
+  }
+}
 </style>
