@@ -76,14 +76,20 @@ export default {
     height: calc(100% - 4.1rem);
   }
 }
-@media only screen and (min-width: 1440px) and (max-width: 1440px) and (min-height: 933px) and (max-height: 933px) {
+
+@media only screen and (min-width: 1440px) and (max-width: 1440px) and (min-height: 783px) and (max-height: 783px) {
+  .page-container {
+    height: calc(100% - 3.2rem);
+  }
+}
+@media only screen and (min-width: 1400px) and (max-width: 1400px) and (min-height: 933px) and (max-height: 933px) {
   .page-container {
     height: calc(100% - 3.5rem);
   }
 }
-@media only screen and (min-width: 1440px) and (max-width: 1440px) and (min-height: 783px) and (max-height: 783px) {
+@media only screen and (min-width: 1366px) and (max-width: 1366px) and (min-height: 651px) and (max-height: 651px) {
   .page-container {
-    height: calc(100% - 3.2rem);
+    height: calc(100% - 2.5rem);
   }
 }
 
