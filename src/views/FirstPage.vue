@@ -2200,6 +2200,20 @@ export default {
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1400px) and (min-height: 935px) and (max-height: 935px) {
+  .desktop-menu__contact-section__header {
+    font-size: 2.5rem;
+    margin: 0 0 2.5rem 0;
+  }
+  .contact-items__container {
+    padding-left: 2rem;
+    gap: 1rem;
+  }
+  .desktop-menu__dynamic-content--item {
+    font-size: 2.5rem;
+  }
+  .footer-section {
+    padding-top: 2.5rem;
+  }
   .main-content__container {
     height: calc(100vh - 3.5rem);
   }
@@ -2273,6 +2287,20 @@ export default {
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1400px) and (min-height: 933px) and (max-height: 933px) {
+  .desktop-menu__contact-section__header {
+    font-size: 2.5rem;
+    margin: 0 0 2.5rem 0;
+  }
+  .contact-items__container {
+    padding-left: 2rem;
+    gap: 1rem;
+  }
+  .desktop-menu__dynamic-content--item {
+    font-size: 2.5rem;
+  }
+  .footer-section {
+    padding-top: 2.5rem;
+  }
   .main-content__container {
     height: calc(100vh - 3.5rem);
   }
