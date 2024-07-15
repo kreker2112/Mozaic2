@@ -1149,6 +1149,79 @@ export default {
   }
 }
 
+@media only screen and (min-width: 2560px) and (max-width: 2560px) and (min-height: 963px) and (max-height: 963px) {
+  .main-content__container {
+    height: calc(100vh - 4.6rem);
+  }
+  .bricks-frame {
+    left: 0.8rem;
+    top: 0.8rem;
+    width: 3.8rem;
+  }
+  .main-img {
+    width: 80rem;
+    background-position: 0 -5px;
+  }
+  .first-page-content {
+    height: calc(100vh - 4.6rem);
+  }
+  .first-page {
+    height: calc(100vh - 4.6rem);
+  }
+  .upper-content__container {
+    height: 84vh;
+  }
+  .mosaic-part {
+    top: 2.7rem;
+    left: 5.3rem;
+    width: 53.5rem;
+  }
+  .callback__container {
+    bottom: 2.5rem;
+    left: 3rem;
+    gap: 2rem;
+  }
+  .callback-number {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+  .callback-button {
+    font-size: 1.2rem;
+    padding: 1rem 0.8rem;
+  }
+  .cases {
+    height: 31.2rem;
+    left: 68rem;
+    top: 0;
+  }
+  .services {
+    height: 18.2rem;
+    left: 42.8rem;
+    bottom: 11rem;
+  }
+  .left-section {
+    height: 84vh;
+  }
+  .left-section__upper {
+    width: 322.4rem;
+    left: 68.1rem;
+    height: 51.7vh;
+  }
+  .left-section__middle {
+    width: 347.38rem;
+    top: 31.3rem;
+    left: 43rem;
+    height: 30vh;
+  }
+  .services-content__container {
+    width: 390.5rem;
+    bottom: 0;
+  }
+  .lower-row {
+    height: 6.5rem;
+  }
+}
+
 @media only screen and (min-width: 1920px) and (max-width: 1920px) and (min-height: 1083px) and (max-height: 1083px) {
   .main-content__container {
     height: calc(100vh - 5.7rem);

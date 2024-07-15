@@ -51,6 +51,11 @@ export default {
     height: calc(100% - 6.5rem);
   }
 }
+@media only screen and (min-width: 2560px) and (max-width: 2560px) and (min-height: 963px) and (max-height: 963px) {
+  .page-container {
+    height: calc(100% - 4.6rem);
+  }
+}
 @media only screen and (min-width: 1920px) and (max-width: 1920px) and (min-height: 1083px) and (max-height: 1083px) {
   .page-container {
     height: calc(100% - 5.7rem);
