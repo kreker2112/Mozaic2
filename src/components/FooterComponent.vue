@@ -299,4 +299,31 @@ export default {};
     font-size: 1.5rem;
   }
 }
+@media only screen and (min-width: 1440px) and (max-width: 1440px) and (min-height: 933px) and (max-height: 933px) {
+  .footer {
+    height: 3.5rem;
+  }
+  .footer-frame {
+    margin-left: 0.5rem;
+  }
+  .footer-frame img {
+    width: 2.2rem;
+  }
+  .center a {
+    font-size: 80%;
+  }
+  .left {
+    margin-left: 0.8rem;
+    font-size: 70%;
+  }
+  .facebook_image {
+    width: 0.6rem;
+  }
+  .instagram_image {
+    width: 1.2rem;
+  }
+  .right a {
+    font-size: 1.2rem;
+  }
+}
 </style>
