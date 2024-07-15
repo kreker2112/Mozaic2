@@ -1081,9 +1081,9 @@ export default {
     height: calc(100vh - 5.7rem);
   }
   .bricks-frame {
-    left: 1rem;
-    top: 1rem;
-    width: 3rem;
+    left: 0.8rem;
+    top: 0.8rem;
+    width: 4rem;
   }
   .main-img {
     width: 90rem;
@@ -1099,52 +1099,53 @@ export default {
     height: 81.95vh;
   }
   .mosaic-part {
-    top: 5.8rem;
-    left: 11.2rem;
-    width: 70rem;
+    top: 2.6rem;
+    left: 5.8rem;
+    width: 59rem;
   }
   .callback__container {
-    bottom: 2rem;
-    left: 2rem;
+    bottom: 3rem;
+    left: 6rem;
     gap: 1.5rem;
   }
   .callback-number {
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 1rem;
   }
   .callback-button {
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding: 0.8rem;
   }
   .cases {
-    height: 35.9rem;
-    left: 64.4rem;
-    bottom: 31.7rem;
+    height: 34rem;
+    left: 74.8rem;
+    bottom: 33.9rem;
   }
   .services {
-    height: 20.1rem;
-    left: 35rem;
-    bottom: 11.5rem;
+    height: 19.65rem;
+    left: 46.9rem;
+    bottom: 14.2rem;
   }
   .left-section {
     height: 81.95vh;
   }
   .left-section__upper {
-    width: 125.61rem;
-    left: 70rem;
-    height: 48.5vh;
+    width: 132rem;
+    left: 74.75rem;
+    height: 49.82vh;
   }
   .left-section__middle {
-    width: 154.95rem;
-    top: 33rem;
+    width: 159.6rem;
+    top: 34rem;
     left: 47rem;
-    height: 32.8vh;
+    height: 29.25vh;
   }
   .services-content__container {
+    width: 206.6rem;
     bottom: 0;
   }
   .lower-row {
-    height: 7.11rem;
+    height: 8.5rem;
   }
 }
 
