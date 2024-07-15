@@ -1076,6 +1076,79 @@ export default {
   }
 }
 
+@media only screen and (min-width: 3840px) and (max-width: 3840px) and (min-height: 1323px) and (max-height: 1323px) {
+  .main-content__container {
+    height: calc(100vh - 6.5rem);
+  }
+  .bricks-frame {
+    left: 1.1rem;
+    top: 1.1rem;
+    width: 5rem;
+  }
+  .main-img {
+    width: 100rem;
+    background-position: 0 -5px;
+  }
+  .first-page-content {
+    height: calc(100vh - 6.5rem);
+  }
+  .first-page {
+    height: calc(100vh - 6.5rem);
+  }
+  .upper-content__container {
+    height: 84vh;
+  }
+  .mosaic-part {
+    top: 3.8rem;
+    left: 7.2rem;
+    width: 74rem;
+  }
+  .callback__container {
+    bottom: 3.5rem;
+    left: 5rem;
+    gap: 2rem;
+  }
+  .callback-number {
+    font-size: 1.6rem;
+    padding: 1rem;
+  }
+  .callback-button {
+    font-size: 1.6rem;
+    padding: 1.5rem;
+  }
+  .cases {
+    height: 42.6rem;
+    left: 93.5rem;
+    top: 0;
+  }
+  .services {
+    height: 25rem;
+    left: 58.8rem;
+    bottom: 15rem;
+  }
+  .left-section {
+    height: 84vh;
+  }
+  .left-section__upper {
+    width: 297rem;
+    left: 93.5rem;
+    height: 51.8vh;
+  }
+  .left-section__middle {
+    width: 331.5rem;
+    top: 43rem;
+    left: 59rem;
+    height: 30.2vh;
+  }
+  .services-content__container {
+    width: 390.5rem;
+    bottom: 0;
+  }
+  .lower-row {
+    height: 8.55rem;
+  }
+}
+
 @media only screen and (min-width: 2560px) and (max-width: 2560px) and (min-height: 1323px) and (max-height: 1323px) {
   .main-content__container {
     height: calc(100vh - 6.5rem);
@@ -1365,63 +1438,6 @@ export default {
   }
   .lower-row {
     height: 6rem;
-  }
-}
-
-/* @media (max-width: 1920px) {
-  .upper-content__container {
-    height: 84vh;
-  }
-  .callback__container {
-    bottom: 2rem;
-    left: 2rem;
-    gap: 1.5rem;
-  }
-  .callback-number {
-    font-size: 1rem;
-    padding: 1rem;
-  }
-  .callback-button {
-    font-size: 0.9rem;
-    padding: 0.8rem;
-  }
-  .cases {
-    height: 35.9rem;
-    left: 64.4rem;
-    bottom: 31.7rem;
-  }
-  .services {
-    height: 20.1rem;
-    left: 35rem;
-    bottom: 11.5rem;
-  }
-  .left-section {
-    height: 84vh;
-  }
-  .left-section__upper {
-    width: 125.61rem;
-    left: 64.3rem;
-    height: 53.4vh;
-  }
-  .left-section__middle {
-    width: 154.95rem;
-    top: 36.26rem;
-    left: 35rem;
-    height: 30vh;
-  }
-  .services-content__container {
-    bottom: 0.3rem;
-  }
-  .lower-row {
-    height: 7.11rem;
-  }
-} */
-
-@media (max-width: 767px) {
-  .second-page {
-    width: 1710px;
-    height: 932px;
-    overflow-x: auto;
   }
 }
 </style>

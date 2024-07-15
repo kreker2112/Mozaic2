@@ -132,6 +132,34 @@ export default {};
   }
 }
 
+@media only screen and (min-width: 3840px) and (max-width: 3840px) and (min-height: 1323px) and (max-height: 1323px) {
+  .footer {
+    height: 6.5rem;
+  }
+  .footer-frame {
+    margin-left: 0.5rem;
+  }
+  .footer-frame img {
+    width: 4rem;
+  }
+  .center a {
+    font-size: 150%;
+  }
+  .left {
+    margin-left: 1rem;
+    font-size: 120%;
+  }
+  .facebook_image {
+    width: 1rem;
+  }
+  .instagram_image {
+    width: 2.2rem;
+  }
+  .right a {
+    font-size: 2.2rem;
+  }
+}
+
 @media only screen and (min-width: 2560px) and (max-width: 2560px) and (min-height: 1323px) and (max-height: 1323px) {
   .footer {
     height: 6.5rem;
