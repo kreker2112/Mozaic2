@@ -1542,17 +1542,17 @@ export default {
     width: 54.1rem;
   }
   .callback__container {
-    bottom: 1.6rem;
-    left: 4rem;
+    bottom: 1.5rem;
+    left: 5rem;
     gap: 2rem;
   }
   .callback-number {
-    font-size: 0.9rem;
+    font-size: 1.15rem;
     padding: 1rem;
   }
   .callback-button {
-    font-size: 0.9rem;
-    padding: 0.8rem 0.5rem;
+    font-size: 1.15rem;
+    padding: 0.8rem 0.8rem;
   }
   .cases {
     height: 31.3rem;
