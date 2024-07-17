@@ -39,7 +39,8 @@ export default {
 <style scoped>
 .header {
   width: 100vw;
-  height: 4.4rem;
+  height: 80px;
+  padding: 25px 114.5px;
 }
 
 .container {
@@ -50,7 +51,6 @@ export default {
 }
 
 .header .logo {
-  margin-left: 8%;
 }
 
 .header .nav {
@@ -69,10 +69,15 @@ export default {
 
 .header .nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: #002d6e;
 }
 
 .header .contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 8%;
+  gap: 1rem;
 }
 
 .header .contact a {

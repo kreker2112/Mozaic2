@@ -1,15 +1,18 @@
 <template>
   <div class="second-page__container">
     <HeaderComponent />
+    <SecondFooter />
   </div>
 </template>
 
 <script>
+import SecondFooter from "../components/SecondFooter";
 import HeaderComponent from "../components/HeaderComponent";
 
 export default {
   name: "ServicesPage",
   components: {
+    SecondFooter,
     HeaderComponent,
   },
 };
@@ -17,7 +20,9 @@ export default {
 
 <style scoped>
 .second-page__container {
-  overflow-y: scroll !important;
+  overflow-y: scroll;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
 }
 </style>

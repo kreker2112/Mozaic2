@@ -30,6 +30,9 @@ export default {};
 
 <style scoped>
 .footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
   background-color: #ff6400;
   color: #ffffff;
   display: flex;
@@ -71,7 +74,6 @@ export default {};
   position: relative;
   font-family: "Montserrat";
   font-size: 100%;
-  font-weight: bold;
 }
 
 .right {
