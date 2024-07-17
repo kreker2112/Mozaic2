@@ -9,48 +9,49 @@
         />
       </div>
       <nav class="nav">
-        <ul>
-          <li><a href="#">Послуги</a></li>
-          <li><a href="#">Брифи</a></li>
-          <li><a href="#">Контакти</a></li>
+        <ul class="nav-list">
+          <li class="nav-list__item"><a href="#">Послуги</a></li>
+          <li class="nav-list__item"><a href="#">Брифи</a></li>
+          <li class="nav-list__item"><a href="#">Контакти</a></li>
         </ul>
       </nav>
       <div class="contact">
         <a href="tel:0679077478">067 907 74 78</a>
-        <div class="social-media">
-          <a href="#"
-            ><img src="../images/facebook-icon.png" alt="Facebook"
-          /></a>
-          <a href="#"
-            ><img src="../images/instagram-icon.png" alt="Instagram"
-          /></a>
-        </div>
+
+        <a href="#"><img src="../images/facebook-icon.png" alt="Facebook" /></a>
+        <a href="#"
+          ><img src="../images/instagram-icon.png" alt="Instagram"
+        /></a>
       </div>
     </div>
   </header>
 </template>
 
 <script>
-export default {
-  name: "HeaderComponent",
-};
+export default {};
 </script>
 
 <style scoped>
 .header {
-  width: 100vw;
+  width: 100%;
   height: 80px;
-  padding: 25px 114.5px;
+  display: flex;
+  align-items: center;
 }
 
 .container {
+  margin: 0 auto;
+  padding: 25px 114.5px;
   width: 100vw;
+  height: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header .logo {
+.logo {
+  display: flex;
+  align-items: center;
 }
 
 .header .nav {
@@ -58,16 +59,21 @@ export default {
   flex-direction: row;
 }
 
-.header .nav ul {
+.nav-list {
   list-style: none;
   display: flex;
 }
 
-.header .nav ul li {
+.nav-list__item {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 400;
   margin-right: 20px;
+  text-decoration: none;
+  color: #002d6e;
 }
 
-.header .nav ul li a {
+.nav-list__item a {
   text-decoration: none;
   color: #002d6e;
 }
@@ -76,15 +82,14 @@ export default {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-right: 8%;
-  gap: 1rem;
+  gap: 35px;
 }
 
 .header .contact a {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 600;
   text-decoration: none;
-  color: #333;
-}
-
-.header .social-media a {
+  color: #ff6400;
 }
 </style>

@@ -1,6 +1,7 @@
 <template>
   <div class="second-page__container">
     <HeaderComponent />
+    <div class="lasergood__rebrending"></div>
     <SecondFooter />
   </div>
 </template>

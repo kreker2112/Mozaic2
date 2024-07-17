@@ -1,7 +1,9 @@
 <template>
   <footer class="footer">
     <div class="footer-frame">
-      <a href="#"><img src="../images/footerframe.png" alt="footerframe" /></a>
+      <a href="#"
+        ><img src="../images/footerframe2.png" alt="footerframe2"
+      /></a>
     </div>
     <div class="left">
       ВИРІШУЄМО <br />
