@@ -25,5 +25,15 @@ export default {
   width: 100vw;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lasergood__rebrending {
+  width: 100%;
+
+  background-image: url("../images/hero-image.png");
+  background-size: cover;
+  background-position: center;
 }
 </style>
