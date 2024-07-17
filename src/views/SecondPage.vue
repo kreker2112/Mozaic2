@@ -34,6 +34,7 @@ export default {
 
 .lasergood__rebrending {
   width: 100%;
+  height: 100vh;
   background-image: url("../images/hero-image.png");
   background-size: cover;
   background-position: center;
