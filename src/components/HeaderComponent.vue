@@ -1,7 +1,13 @@
 <template>
   <header class="header">
     <div class="container">
-      <div class="logo">ЛОГО</div>
+      <div class="logo">
+        <img
+          src="../images/header-logo.png"
+          alt="header-logo"
+          class="header-logo"
+        />
+      </div>
       <nav class="nav">
         <ul>
           <li><a href="#">Послуги</a></li>
@@ -33,19 +39,25 @@ export default {
 <style scoped>
 .header {
   background: #fff;
-  padding: 10px 0;
+  width: 100vw;
+  height: 80px;
   border-bottom: 1px solid #ccc;
 }
 
+.container {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .header .logo {
-  display: inline-block;
-  font-size: 24px;
-  font-weight: bold;
+  margin-left: 8%;
 }
 
 .header .nav {
-  display: inline-block;
-  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
 }
 
 .header .nav ul {

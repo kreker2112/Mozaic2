@@ -1,37 +1,16 @@
 <template>
   <div class="second-page__container">
     <HeaderComponent />
-    <SevicesHero />
-    <SevicesClients />
-    <ServicesStory />
-    <ServicesSolution />
-    <ContentPlan />
-    <ContactForm />
-    <ServicesFooter />
   </div>
 </template>
 
 <script>
 import HeaderComponent from "../components/HeaderComponent";
-import SevicesHero from "../components/ServicesHero.vue";
-import SevicesClients from "../components/ServicesClients.vue";
-import ServicesStory from "../components/ServicesStory.vue";
-import ServicesSolution from "../components/ServicesSolution.vue";
-import ContentPlan from "../components/ContentPlan.vue";
-import ContactForm from "../components/ContactForm.vue";
-import ServicesFooter from "../components/ServicesFooter.vue";
 
 export default {
   name: "ServicesPage",
   components: {
     HeaderComponent,
-    SevicesHero,
-    SevicesClients,
-    ServicesStory,
-    ServicesSolution,
-    ContentPlan,
-    ContactForm,
-    ServicesFooter,
   },
 };
 </script>
@@ -41,20 +20,13 @@ export default {
   overflow-y: scroll !important;
   width: 100vw;
 }
-.container {
-  width: 100vw;
-  margin: 0 auto;
-}
 
-.header,
-.hero,
-.clients,
-.story,
-.solution,
-.content-plan,
-.contact-form,
-.footer {
-  padding: 50px 0;
+.header {
+  background: #f8f8f8;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .header .logo {
