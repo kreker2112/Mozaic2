@@ -38,10 +38,8 @@ export default {
 
 <style scoped>
 .header {
-  background: #fff;
   width: 100vw;
-  height: 80px;
-  border-bottom: 1px solid #ccc;
+  height: 4.4rem;
 }
 
 .container {
@@ -75,16 +73,13 @@ export default {
 }
 
 .header .contact {
-  float: right;
 }
 
 .header .contact a {
   text-decoration: none;
   color: #333;
-  margin-right: 10px;
 }
 
 .header .social-media a {
-  margin-left: 5px;
 }
 </style>
