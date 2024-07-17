@@ -1,0 +1,168 @@
+<template>
+  <div class="second-page__container">
+    <HeaderComponent />
+    <SevicesHero />
+    <SevicesClients />
+    <ServicesStory />
+    <ServicesSolution />
+    <ContentPlan />
+    <ContactForm />
+    <ServicesFooter />
+  </div>
+</template>
+
+<script>
+import HeaderComponent from "../components/HeaderComponent";
+import SevicesHero from "../components/ServicesHero.vue";
+import SevicesClients from "../components/ServicesClients.vue";
+import ServicesStory from "../components/ServicesStory.vue";
+import ServicesSolution from "../components/ServicesSolution.vue";
+import ContentPlan from "../components/ContentPlan.vue";
+import ContactForm from "../components/ContactForm.vue";
+import ServicesFooter from "../components/ServicesFooter.vue";
+
+export default {
+  name: "ServicesPage",
+  components: {
+    HeaderComponent,
+    SevicesHero,
+    SevicesClients,
+    ServicesStory,
+    ServicesSolution,
+    ContentPlan,
+    ContactForm,
+    ServicesFooter,
+  },
+};
+</script>
+
+<style scoped>
+.second-page__container {
+  overflow-y: scroll !important;
+  width: 100vw;
+}
+.container {
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.header,
+.hero,
+.clients,
+.story,
+.solution,
+.content-plan,
+.contact-form,
+.footer {
+  padding: 50px 0;
+}
+
+.header .logo {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header .nav {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.header .nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.header .nav ul li {
+  margin-right: 20px;
+}
+
+.header .nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.header .contact {
+  float: right;
+}
+
+.header .contact a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 10px;
+}
+
+.header .social-media a {
+  margin-left: 5px;
+}
+
+.hero {
+  background: #f8f8f8;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.clients h2,
+.story h2,
+.solution h2,
+.content-plan h2,
+.contact-form h2,
+.footer h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.client-info,
+.story-details {
+  display: flex;
+  align-items: center;
+}
+
+.client-info img,
+.story-details img {
+  margin-right: 20px;
+}
+
+.client-count,
+.footer-contact {
+  text-align: center;
+}
+
+.contact-form form,
+.footer form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form input,
+.footer input {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.contact-form button,
+.footer button {
+  padding: 10px 20px;
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.footer {
+  background: #333;
+  color: #fff;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+</style>

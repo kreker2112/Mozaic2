@@ -29,17 +29,17 @@ export default {
 .page-container {
   width: 100vw;
   height: calc(100% - 4rem); /* Adjust height considering the footer */
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
 }
 
-.page {
+/* .page {
   height: 100%;
   width: 100vw;
   position: absolute;
   transition: all 1s;
   overflow: hidden;
-}
+} */
 @media only screen and (min-width: 3840px) and (max-width: 3840px) and (min-height: 2045px) and (max-height: 2045px) {
   .page-container {
     height: calc(100% - 9rem);

@@ -167,6 +167,7 @@
           <div class="left-section__upper">
             <div class="upper-row">
               <img
+                @click.prevent="navigateToSecondPage"
                 src="../images/lasergood.png"
                 alt="lasergood"
                 class="lasergood"
@@ -185,6 +186,7 @@
               />
 
               <img
+                @click.prevent="navigateToSecondPage"
                 src="../images/lasergood.png"
                 alt="lasergood"
                 class="lasergood"
@@ -201,7 +203,9 @@
                 alt="uniclinic"
                 class="uniclinic"
               />
+
               <img
+                @click.prevent="navigateToSecondPage"
                 src="../images/lasergood.png"
                 alt="lasergood"
                 class="lasergood"
@@ -383,6 +387,7 @@
 
 <script>
 import { ref, onMounted, onUnmounted } from "vue";
+import { useRouter } from "vue-router";
 export default {
   name: "SecondPage",
   setup() {
@@ -497,6 +502,12 @@ export default {
       window.removeEventListener("resize", handleResize);
     });
 
+    const router = useRouter();
+
+    const navigateToSecondPage = () => {
+      router.push({ name: "second-page" });
+    };
+
     return {
       openMenu,
       closeMenu,
@@ -508,6 +519,7 @@ export default {
       isMenuOpen,
       activeMenu,
       onScroll,
+      navigateToSecondPage,
     };
   },
 };
@@ -881,6 +893,16 @@ export default {
   z-index: 300;
 }
 
+.left-section__upper a {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+  flex-grow: 0;
+  z-index: 300;
+}
+
 .upper-content__container {
   position: fixed;
   display: flex;
@@ -897,11 +919,18 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: start;
+  align-items: stretch;
   gap: 0;
   overflow-x: hidden;
   white-space: nowrap;
   z-index: 300;
 }
+
+/* .upper-row img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+} */
 
 .middle-row {
   position: relative;

@@ -1,11 +1,17 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import FirstPage from "../views/FirstPage.vue";
+import SecondPage from "../views/SecondPage.vue";
 
 const routes = [
   {
     path: "/",
     name: "first-page",
     component: FirstPage,
+  },
+  {
+    path: "/second",
+    name: "second-page",
+    component: SecondPage,
   },
 ];
 
