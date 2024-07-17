@@ -5,18 +5,11 @@
         <component :is="Component" :key="$route.fullPath" />
       </router-view>
     </div>
-    <FooterComponent />
   </div>
 </template>
 
 <script>
-import FooterComponent from "./components/FooterComponent.vue";
-
-export default {
-  components: {
-    FooterComponent,
-  },
-};
+export default {};
 </script>
 
 <style>

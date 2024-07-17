@@ -383,12 +383,17 @@
       </div>
     </div>
   </div>
+  <FooterComponent />
 </template>
 
 <script>
+import FooterComponent from "../components/FooterComponent.vue";
 import { ref, onMounted, onUnmounted } from "vue";
 import { useRouter } from "vue-router";
 export default {
+  components: {
+    FooterComponent,
+  },
   name: "SecondPage",
   setup() {
     const isMenuOpen = ref(false);
