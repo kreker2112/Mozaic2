@@ -896,16 +896,7 @@ export default {
   flex-shrink: 0;
   flex-grow: 0;
   z-index: 300;
-}
-
-.left-section__upper a {
-  max-width: 100%;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  flex-shrink: 0;
-  flex-grow: 0;
-  z-index: 300;
+  cursor: pointer;
 }
 
 .upper-content__container {

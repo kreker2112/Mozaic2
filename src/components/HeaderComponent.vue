@@ -41,7 +41,7 @@ export default {};
 
 .container {
   margin: 0 auto;
-  padding: 25px 114.5px;
+  padding: 25px 124.5px;
   width: 100vw;
   height: 30px;
   display: flex;
@@ -66,7 +66,7 @@ export default {};
 
 .nav-list__item {
   font-family: "Montserrat";
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   margin-right: 20px;
   text-decoration: none;
@@ -82,7 +82,9 @@ export default {};
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 35px;
+  font-size: 20px;
+  font-weight: 400;
+  gap: 50px;
 }
 
 .header .contact a {

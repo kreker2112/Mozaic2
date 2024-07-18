@@ -1,8 +1,139 @@
 <template>
   <div class="second-page__container">
-    <HeaderComponent />
     <div class="lasergood__rebrending">
-      <!-- <img src="../images/hero-image.png" alt="hero-image" /> -->
+      <HeaderComponent />
+      <div class="rebrending-header__container">
+        <H1 class="rebrending__header"
+          >Re-брендинг мережі <br />
+          центрів лазерної епіляції <br />
+          та косметології</H1
+        >
+      </div>
+    </div>
+    <div class="client-container">
+      <div class="our_client">
+        <h1 class="our_client__header">ХТО НАШ КЛІЄНТ</h1>
+        <div class="our_client--text__container">
+          <p class="our_client--text">
+            — мережа центрів лазерної епіляції та косметології, яка <br />
+            перебувала на етапі ребрендингу. <br />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit <br />, sed
+            do eiusmod tempor incididunt ut labore et dolore <br />
+            magna aliqua. Ut enim ad minim veniam, quis nostrud <br />
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo <br />
+            consequat. Duis aute irure dolor in reprehenderit
+          </p>
+        </div>
+      </div>
+      <div class="our-client__image__container">
+        <img
+          class="our-client__image"
+          src="../images/client-card.png"
+          alt="client-card"
+        />
+      </div>
+      <div class="salons__container">
+        <h1 class="salons__container-header">8</h1>
+        <p class="salons__container-text">
+          САЛОНІВ <br />
+          ПО ВСІЙ УКРАЇНІ
+        </p>
+      </div>
+    </div>
+    <div class="lasergood-love__container">
+      <div class="lasergood-love__container-left">
+        <h1 class="lasergood-love__header">
+          БЛАБЛАБЛА <br />
+          БЛАБЛА
+        </h1>
+        <div class="lasergood-love--text__container">
+          <p class="lasergood-love--text">
+            Lorem ipsum dolor sit<br />
+            amet, consectetur<br />
+            adipiscing elit , sed do<br />
+            eiusmod tempor<br />
+            incididunt ut labore et<br />
+            dolore magna aliqua. Ut<br />
+            enim ad minim veniam
+          </p>
+        </div>
+      </div>
+      <div class="lasergood-love__container-center">
+        <img
+          class="lasergood__story-image"
+          src="../images/story-image.png"
+          alt="story-image"
+        />
+      </div>
+      <div class="lasergood-love__container-right">
+        <img
+          class="lasergood-love__right-img"
+          src="../images/lasergood-love__right.png"
+          alt="lasergood-love__right"
+        />
+      </div>
+    </div>
+    <div class="storytelling__container">
+      <div class="storytelling-left">
+        <img
+          class="storytelling-card_img"
+          src="../images/storytelling-card.png"
+          alt="storytelling-card"
+        />
+      </div>
+      <div class="storytelling-center">
+        <img
+          class="storytelling-center_img"
+          src="../images/storytelling-center_img.png"
+          alt="storytelling-center_img"
+        />
+      </div>
+      <div class="storytelling-right">
+        <img
+          class="storytelling-right_img"
+          src="../images/storytelling-right_img.png"
+          alt="storytelling-right_img"
+        />
+      </div>
+    </div>
+    <div class="fetch_container">
+      <div class="fetch-left">
+        <img
+          class="fetch-left_img"
+          src="../images/fetch-left_img.jpg"
+          alt="fetch-left"
+        />
+      </div>
+      <div class="fetch-center">
+        <img
+          class="fetch-center_img"
+          src="../images/fetch-center_img.png"
+          alt="fetch-center"
+        />
+      </div>
+      <div class="fetch-right">
+        <img
+          class="fetch-right_img"
+          src="../images/fetch-right_img.png"
+          alt="fetch-right"
+        />
+      </div>
+    </div>
+    <div class="solution_container">
+      <div class="solution_container-left">
+        <img
+          class="solution-left_img"
+          src="../images/solution-left.png"
+          alt="solution-left"
+        />
+      </div>
+      <div class="solution_container-right">
+        <img
+          class="solution-right_img"
+          src="../images/solution-right.jpg"
+          alt="solution-right"
+        />
+      </div>
     </div>
     <SecondFooter />
   </div>
@@ -25,7 +156,7 @@ export default {
 .second-page__container {
   overflow-y: scroll;
   width: 100vw;
-  /* height: 5598px; */
+  margin-bottom: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,10 +165,262 @@ export default {
 
 .lasergood__rebrending {
   width: 100%;
-  height: 100vh;
+  height: 837.5px;
   background-image: url("../images/hero-image.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+.rebrending-header__container {
+  width: 894px;
+  height: 210px;
+  padding-left: 95px;
+  padding-top: 20px;
+}
+.rebrending__header {
+  font-family: "Montserrat";
+  font-size: 56px;
+  font-weight: 800;
+  color: #002d6e;
+  text-align: start;
+  cursor: none;
+}
+.client-container {
+  width: 100%;
+  height: 642.5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+}
+
+.our_client {
+  margin-top: 100px;
+  margin-left: 80px;
+  text-align: start;
+  width: 50%;
+}
+.our_client__header {
+  font-family: "Montserrat";
+  font-size: 50px;
+  font-weight: 800;
+  color: #002d6e;
+  text-align: start;
+  cursor: none;
+}
+.our_client--text {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 500;
+  color: #2b2b2b;
+  text-align: start;
+  cursor: none;
+}
+.our-client__image__container {
+  margin-top: 0;
+  width: 25%;
+  height: 100%;
+}
+.our-client__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.salons__container {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #002d6e;
+}
+.salons__container-header {
+  margin-bottom: 0;
+  font-family: "Montserrat";
+  font-size: 120px;
+  font-weight: 800;
+  color: #ffffff;
+  text-align: center;
+  cursor: none;
+}
+.salons__container-text {
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  cursor: none;
+}
+
+.lasergood-love__container {
+  width: 100%;
+  height: 591px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.lasergood-love__container-left {
+  width: 25%;
+  height: 100%;
+
+  background-color: #002d6e;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.lasergood-love__header {
+  padding-left: 110px;
+  font-family: "Montserrat";
+  font-size: 26px;
+  font-weight: 800;
+  color: #ffffff;
+  text-align: start;
+}
+
+.lasergood-love--text__container {
+  padding-left: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  text-align: start;
+}
+
+.lasergood-love--text {
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: start;
+  cursor: none;
+}
+
+.lasergood-love__container-center {
+  width: 50%;
+  height: 100%;
+}
+
+.lasergood__story-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lasergood-love__container-right {
+  width: 25%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.lasergood-love__right-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.storytelling__container {
+  width: 100%;
+  height: 870px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+}
+.storytelling-left {
+  width: 25%;
+  height: 100%;
+}
+.storytelling-card_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.storytelling-center {
+  width: 25%;
+  height: 100%;
+}
+.storytelling-center_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.storytelling-right {
+  width: 50%;
+  height: 100%;
+}
+.storytelling-right_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.fetch_container {
+  width: 100%;
+  height: 870px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+}
+.fetch-left {
+  width: 50%;
+  height: 100%;
+}
+.fetch-left_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.fetch-center {
+  width: 25%;
+  height: 100%;
+}
+.fetch-center_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.fetch-right {
+  width: 25%;
+  height: 100%;
+}
+.fetch-right_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.solution_container {
+  width: 100%;
+  height: 782.5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+}
+.solution_container-left {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background-color: #002d6e;
+}
+.solution_container-right {
+  width: 50%;
+  height: 100%;
+}
+.solution-left_img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.solution-right_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 </style>
