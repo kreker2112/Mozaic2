@@ -10,7 +10,9 @@
       </div>
       <nav class="nav">
         <ul class="nav-list">
-          <li class="nav-list__item"><a href="#">Послуги</a></li>
+          <li class="nav-list__item">
+            <router-link to="/services">Послуги</router-link>
+          </li>
           <li class="nav-list__item"><a href="#">Брифи</a></li>
           <li class="nav-list__item"><a href="#">Контакти</a></li>
         </ul>
