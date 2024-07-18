@@ -135,6 +135,82 @@
         />
       </div>
     </div>
+    <div class="content-plan_container">
+      <img
+        class="content-plan_img"
+        src="../images/content-plan.jpg"
+        alt="content-plan"
+      />
+    </div>
+    <div class="questions_container">
+      <div class="contact-form">
+        <div class="contact-text">
+          <p>Залишились питання?</p>
+          <p>Давай обговоримо</p>
+        </div>
+        <div class="form-fields">
+          <input type="text" placeholder="Ім'я" class="input-field" />
+          <input type="text" placeholder="Телефон" class="input-field" />
+        </div>
+        <button class="submit-button">
+          <img class="arrow" src="../images/arrow.png" alt="arrow" />
+          <img class="arrow" src="../images/arrow.png" alt="arrow" />
+          <img class="arrow" src="../images/arrow.png" alt="arrow" />
+        </button>
+      </div>
+    </div>
+    <div class="contact-section">
+      <div class="cases-link">
+        <a href="#">Більше кейсів</a>
+      </div>
+      <div class="making-cool__container">
+        <div class="service_container">
+          <div class="main-heading">
+            <h2>ДАВАЙТЕ РАЗОМ СТВОРИМО ЩОСЬ КРУТЕ</h2>
+            <p>
+              напишіть нам блаблабла, залиште контакти і наш менеджер зв'яжеться
+              з вами:
+            </p>
+          </div>
+          <div class="service-buttons">
+            <button class="service-button">Запускайте мій бренд</button>
+            <button class="service-button">Хочу логотип</button>
+            <button class="service-button">Просувайте мій бізнес</button>
+            <button class="service-button">Треба крутий дизайн</button>
+            <button class="service-button">Зробіть сайт, що продає</button>
+            <button class="service-button">Поки не знаю</button>
+          </div>
+        </div>
+        <div class="contact-form_making">
+          <div class="contact-form_making--inputs">
+            <input type="text" placeholder="Ім'я" class="input-field_cases" />
+            <input
+              type="text"
+              placeholder="Телефон"
+              class="input-field_cases"
+            />
+
+            <button class="submit-button_making">
+              <img
+                class="contact-arrow"
+                src="../images/arrow.png"
+                alt="arrow"
+              />
+              <img
+                class="contact-arrow"
+                src="../images/arrow.png"
+                alt="arrow"
+              />
+              <img
+                class="contact-arrow"
+                src="../images/arrow.png"
+                alt="arrow"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <SecondFooter />
   </div>
 </template>
@@ -422,5 +498,203 @@ export default {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.content-plan_container {
+  width: 100%;
+  height: 562.5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.questions_container {
+  position: relative;
+  width: 100%;
+  height: 965.6px;
+  background-image: url("../images/questions-image.jpg");
+  background-size: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.contact-form {
+  position: absolute;
+  bottom: 14%;
+  left: 6%;
+  width: 86%;
+  height: 16.8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background-color: #ffffff;
+  opacity: 0.85;
+}
+
+.contact-text {
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 0.4;
+  color: #002d6e;
+  margin-right: 20px;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-grow: 1;
+}
+
+.input-field {
+  width: 400px;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 16px;
+}
+
+.input-field::placeholder {
+  color: #aaa;
+}
+
+.submit-button {
+  width: 325.65px;
+  height: 66.07px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  width: 75px;
+  margin: 0 15px;
+}
+
+.contact-section {
+  width: 100%;
+  height: 730.68;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 160px;
+  padding: 20px;
+}
+
+.cases-link {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.cases-link a {
+  color: #002d6e;
+  font-size: 18px;
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+
+.making-cool__container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  gap: 120px;
+}
+
+.service_container {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contact-form_making--inputs {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main-heading {
+  margin-bottom: 20px;
+}
+
+.main-heading h2 {
+  color: #002d6e;
+  font-size: 32px;
+  font-family: "Montserrat";
+  font-weight: 800;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.main-heading p {
+  color: #666;
+  font-size: 24px;
+  font-family: "Montserrat";
+  margin: 10px 0;
+}
+
+.service-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.service-button {
+  background: white;
+  border: 2px solid #ccc;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 6px;
+}
+
+.contact-form_making {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.input-field_cases {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.input-field::placeholder {
+  color: #aaa;
+}
+
+.submit-button_making {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-arrow {
+  margin: 0 2px;
 }
 </style>
