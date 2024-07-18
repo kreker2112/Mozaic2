@@ -510,7 +510,7 @@ export default {
     const router = useRouter();
 
     const navigateToSecondPage = () => {
-      router.push({ name: "second-page" });
+      router.push({ name: "lasergood-page" });
     };
 
     return {
@@ -736,7 +736,7 @@ export default {
 
 .contact-item-address::before {
   content: url("../images/path-logo.png");
-  margin-right: 1.1рем;
+  margin-right: 1.1reм;
 }
 
 .menu__socials {

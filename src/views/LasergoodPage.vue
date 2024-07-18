@@ -149,10 +149,20 @@
           <p>Давай обговоримо</p>
         </div>
         <div class="form-fields">
-          <input type="text" placeholder="Ім'я" class="input-field" />
-          <input type="text" placeholder="Телефон" class="input-field" />
+          <input
+            type="text"
+            placeholder="Ім'я"
+            class="input-field"
+            v-model="contactName"
+          />
+          <input
+            type="text"
+            placeholder="Телефон"
+            class="input-field"
+            v-model="contactPhone"
+          />
         </div>
-        <button class="submit-button">
+        <button class="submit-button" @click="submitContactForm">
           <img class="arrow" src="../images/arrow.png" alt="arrow" />
           <img class="arrow" src="../images/arrow.png" alt="arrow" />
           <img class="arrow" src="../images/arrow.png" alt="arrow" />
@@ -161,7 +171,12 @@
     </div>
     <div class="contact-section">
       <div class="cases-link">
-        <a href="#">Більше кейсів</a>
+        <a href="#"
+          >Більше кейсів<img
+            class="cases-arrow"
+            src="../images/cases-arrow.png"
+            alt="cases-arrow"
+        /></a>
       </div>
       <div class="making-cool__container">
         <div class="service_container">
@@ -173,24 +188,34 @@
             </p>
           </div>
           <div class="service-buttons">
-            <button class="service-button">Запускайте мій бренд</button>
-            <button class="service-button">Хочу логотип</button>
-            <button class="service-button">Просувайте мій бізнес</button>
-            <button class="service-button">Треба крутий дизайн</button>
-            <button class="service-button">Зробіть сайт, що продає</button>
-            <button class="service-button">Поки не знаю</button>
+            <button
+              class="service-button"
+              v-for="service in services"
+              :key="service"
+              @click="toggleService(service)"
+              :class="{ active: selectedServices.includes(service) }"
+            >
+              {{ service }}
+            </button>
           </div>
         </div>
         <div class="contact-form_making">
           <div class="contact-form_making--inputs">
-            <input type="text" placeholder="Ім'я" class="input-field_cases" />
-            <input
-              type="text"
-              placeholder="Телефон"
-              class="input-field_cases"
-            />
-
-            <button class="submit-button_making">
+            <div class="contact-form_making--inputs-fields">
+              <input
+                type="text"
+                placeholder="Ім'я"
+                class="input-field_cases"
+                v-model="makingName"
+              />
+              <input
+                type="text"
+                placeholder="Телефон"
+                class="input-field_cases"
+                v-model="makingPhone"
+              />
+            </div>
+            <button class="submit-button_making" @click="submitMakingForm">
               <img
                 class="contact-arrow"
                 src="../images/arrow.png"
@@ -224,6 +249,50 @@ export default {
   components: {
     SecondFooter,
     HeaderComponent,
+  },
+  data() {
+    return {
+      contactName: "",
+      contactPhone: "",
+      makingName: "",
+      makingPhone: "",
+      selectedServices: [],
+      services: [
+        "Запускайте мій бренд",
+        "Хочу логотип",
+        "Просувайте мій бізнес",
+        "Треба крутий дизайн",
+        "Зробіть сайт, що продає",
+        "Поки не знаю",
+      ],
+    };
+  },
+  methods: {
+    submitContactForm() {
+      const contactData = {
+        name: this.contactName,
+        phone: this.contactPhone,
+      };
+      console.log("Contact Form Data:", contactData);
+      // Здесь вы можете отправить данные на сервер
+    },
+    toggleService(service) {
+      const index = this.selectedServices.indexOf(service);
+      if (index === -1) {
+        this.selectedServices.push(service);
+      } else {
+        this.selectedServices.splice(index, 1);
+      }
+    },
+    submitMakingForm() {
+      const makingFormData = {
+        name: this.makingName,
+        phone: this.makingPhone,
+        services: this.selectedServices,
+      };
+      console.log("Making Form Data:", makingFormData);
+      // Здесь вы можете отправить данные на сервер
+    },
   },
 };
 </script>
@@ -519,7 +588,7 @@ export default {
 .contact-form {
   position: absolute;
   bottom: 14%;
-  left: 6%;
+  left: 4%;
   width: 86%;
   height: 16.8%;
   display: flex;
@@ -571,6 +640,11 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+  transform: scale(1.1);
 }
 
 .arrow {
@@ -580,7 +654,6 @@ export default {
 
 .contact-section {
   width: 100%;
-  height: 730.68;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -590,8 +663,11 @@ export default {
 }
 
 .cases-link {
-  text-align: right;
-  margin-bottom: 20px;
+  margin-top: 60px;
+  text-align: center;
+  margin-bottom: 100px;
+  position: relative;
+  display: inline-block;
 }
 
 .cases-link a {
@@ -599,20 +675,32 @@ export default {
   font-size: 18px;
   font-family: "Montserrat";
   font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+
+.cases-link a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #002d6e;
 }
 
 .making-cool__container {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-
-  gap: 120px;
+  justify-content: center;
+  align-items: end;
 }
 
 .service_container {
-  width: 35%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -623,6 +711,13 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.contact-form_making--inputs-fields {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .main-heading {
@@ -649,7 +744,6 @@ export default {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-bottom: 20px;
 }
 
 .service-button {
@@ -661,11 +755,16 @@ export default {
   border-radius: 6px;
 }
 
+.service-button.active {
+  background-color: #ff6600;
+  color: white;
+}
+
 .contact-form_making {
   width: 50%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 20px;
 }
 
@@ -675,7 +774,6 @@ export default {
   border: none;
   border-bottom: 2px solid #ccc;
   font-size: 16px;
-  margin-right: 10px;
 }
 
 .input-field::placeholder {
@@ -683,6 +781,8 @@ export default {
 }
 
 .submit-button_making {
+  margin-top: 47px;
+  height: 66.07px;
   background-color: #ff6600;
   color: white;
   border: none;
@@ -692,9 +792,15 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.submit-button_making:hover {
+  transform: scale(1.1);
 }
 
 .contact-arrow {
-  margin: 0 2px;
+  width: 120px;
 }
 </style>
