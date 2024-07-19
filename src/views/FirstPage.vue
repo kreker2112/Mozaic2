@@ -774,8 +774,8 @@ export default {
 .main-content__container {
   position: relative;
   height: calc(100vh - 4rem);
-  overflow-x: hidden; /* Добавлено для горизонтальной прокрутки */
-  overflow-y: hidden; /* Добавлено для отключения вертикальной прокрутки */
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .main-img {
@@ -783,7 +783,7 @@ export default {
   background-size: cover;
   background-position: center;
   width: 76rem;
-  z-index: 1; /* Убедитесь, что z-index у main-img ниже, чем у изображений в left-section */
+  z-index: 1;
   position: sticky;
   top: 0;
 }
@@ -804,7 +804,7 @@ export default {
   flex-direction: row;
   gap: 1.5rem;
   padding: 1rem;
-  z-index: 20;
+  z-index: 30000;
 }
 
 .callback-number {
@@ -815,6 +815,7 @@ export default {
   padding: 0.5rem;
   outline: none;
   font-size: 1rem;
+  z-index: 30000;
 }
 
 .callback-number::placeholder {
@@ -831,6 +832,7 @@ export default {
   font-weight: 900;
   font-size: 1rem;
   cursor: pointer;
+  z-index: 30000;
 }
 
 .callback-button:hover {
