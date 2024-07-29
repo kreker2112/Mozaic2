@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
     <div class="footer-frame">
-      <a href="#"
+      <a href="#!"
         ><img src="../images/footerframe2.png" alt="footerframe2"
       /></a>
     </div>
@@ -10,15 +10,15 @@
       ПРОБЛЕМУ В 1 КЛІК
     </div>
     <div class="center">
-      <a href="#">ПРО НАС</a>
-      <a href="#">МАРКЕТИНГ</a>
-      <a href="#">АНАЛІТИКА</a>
-      <a href="#">ДИЗАЙН</a>
-      <a href="#">ПРОСУВАННЯ</a>
+      <a href="#!">ПРО НАС</a>
+      <a href="#!">МАРКЕТИНГ</a>
+      <a href="#!">АНАЛІТИКА</a>
+      <a href="#!">ДИЗАЙН</a>
+      <a href="#!">ПРОСУВАННЯ</a>
     </div>
     <div class="right">
-      <a href="#"><img src="../images/logos/facebook.png" alt="facebook" /></a>
-      <a href="#"
+      <a href="#!"><img src="../images/logos/facebook.png" alt="facebook" /></a>
+      <a href="#!"
         ><img src="../images/logos/instagram.png" alt="instagram"
       /></a>
       <a href="tel:08001234567">0 800 123 45 67</a>
@@ -40,7 +40,7 @@ export default {};
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1%;
+  padding: 0 9% 0 1%;
   box-sizing: border-box;
   height: 80px;
   flex-shrink: 0;
@@ -75,7 +75,7 @@ export default {};
   text-decoration: none;
   position: relative;
   font-family: "Montserrat";
-  font-size: 100%;
+  font-size: 80%;
 }
 
 .right {
@@ -104,6 +104,12 @@ export default {};
 @media (max-width: 2304px) {
   .center a {
     font-size: 120%;
+  }
+}
+
+@media (max-width: 1920px) {
+  .center a {
+    font-size: 110%;
   }
 }
 

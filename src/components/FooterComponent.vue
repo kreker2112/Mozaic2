@@ -2,26 +2,26 @@
 <template>
   <footer class="footer">
     <div class="footer-frame">
-      <a href="#"><img src="../images/footerframe.png" alt="footerframe" /></a>
+      <a href="#!"><img src="../images/footerframe.png" alt="footerframe" /></a>
     </div>
     <div class="left">
       ВИРІШУЄМО <br />
       ПРОБЛЕМУ В 1 КЛІК
     </div>
     <div class="center">
-      <a href="#">МАРКЕТИНГ</a>
-      <a href="#">АНАЛІТИКА</a>
-      <a href="#">ДИЗАЙН</a>
-      <a href="#">ПРОСУВАННЯ</a>
+      <a href="#!">МАРКЕТИНГ</a>
+      <a href="#!">АНАЛІТИКА</a>
+      <a href="#!">ДИЗАЙН</a>
+      <a href="#!">ПРОСУВАННЯ</a>
     </div>
     <div class="right">
-      <a href="#"
+      <a href="#!"
         ><img
           class="facebook_image"
           src="../images/logos/facebook.png"
           alt="facebook"
       /></a>
-      <a href="#"
+      <a href="#!"
         ><img
           class="instagram_image"
           src="../images/logos/instagram.png"

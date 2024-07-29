@@ -13,15 +13,17 @@
           <li class="nav-list__item">
             <router-link to="/services">Послуги</router-link>
           </li>
-          <li class="nav-list__item"><a href="#">Брифи</a></li>
-          <li class="nav-list__item"><a href="#">Контакти</a></li>
+          <li class="nav-list__item"><a href="#!">Брифи</a></li>
+          <li class="nav-list__item"><a href="#!">Контакти</a></li>
         </ul>
       </nav>
       <div class="contact">
         <a href="tel:0679077478">067 907 74 78</a>
 
-        <a href="#"><img src="../images/facebook-icon.png" alt="Facebook" /></a>
-        <a href="#"
+        <a href="#!"
+          ><img src="../images/facebook-icon.png" alt="Facebook"
+        /></a>
+        <a href="#!"
           ><img src="../images/instagram-icon.png" alt="Instagram"
         /></a>
       </div>
@@ -44,7 +46,7 @@ export default {};
 .container {
   margin: 0 auto;
   padding: 25px 124.5px;
-  width: 100vw;
+  width: 1440px;
   height: 30px;
   display: flex;
   justify-content: space-between;

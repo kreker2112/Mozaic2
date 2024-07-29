@@ -31,19 +31,19 @@
           reprehenderit.
         </p>
         <div class="arrows">
-          <a href="#"
+          <a
             >Концепції<img
               class="arrow-img"
               src="../images/cases-arrow.png"
               alt="cases-arrow"
           /></a>
-          <a href="#"
+          <a
             >Ідеї<img
               class="arrow-img"
               src="../images/cases-arrow.png"
               alt="cases-arrow"
           /></a>
-          <a href="#"
+          <a
             >Стратегії<img
               class="arrow-img"
               src="../images/cases-arrow.png"
@@ -64,7 +64,7 @@
             v-model="contactPhone"
           />
           <div class="order-link">
-            <a @click="submitContactForm" href="!"
+            <a @click="submitContactForm"
               >Замовити<img
                 class="cases-arrow"
                 src="../images/cases-arrow.png"
@@ -82,7 +82,7 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut lab...
             </p>
-            <a href="#"
+            <a
               >Детальніше
               <img
                 class="arrow-img"
@@ -99,7 +99,7 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut lab...
             </p>
-            <a href="#"
+            <a
               >Детальніше<img
                 class="arrow-img"
                 src="../images/cases-arrow.png"
@@ -121,13 +121,13 @@
           reprehenderit.
         </p>
         <div class="arrows">
-          <a href="#"
+          <a
             >Аудит<img
               class="arrow-img"
               src="../images/cases-arrow.png"
               alt="cases-arrow"
           /></a>
-          <a href="#"
+          <a
             >Аналітика<img
               class="arrow-img"
               src="../images/cases-arrow.png"
@@ -148,7 +148,7 @@
             v-model="contactPhone"
           />
           <div class="order-link">
-            <a @click="submitContactForm" href="!#"
+            <a @click="submitContactForm"
               >Замовити<img
                 class="cases-arrow"
                 src="../images/cases-arrow.png"
@@ -166,7 +166,7 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut lab...
             </p>
-            <a href="#"
+            <a
               >Детальніше
               <img
                 class="arrow-img"
@@ -183,7 +183,7 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut lab...
             </p>
-            <a href="#"
+            <a
               >Детальніше<img
                 class="arrow-img"
                 src="../images/cases-arrow.png"
@@ -205,19 +205,20 @@
           reprehenderit.
         </p>
         <div class="arrows">
-          <a href="#"
+          <a
             >Дизайн<img
               class="arrow-img"
               src="../images/cases-arrow.png"
               alt="cases-arrow"
           /></a>
-          <a href="#"
-            >Створення сайтів<img
+          <a
+            ><router-link to="/development">Створення сайтів</router-link
+            ><img
               class="arrow-img"
               src="../images/cases-arrow.png"
               alt="cases-arrow"
           /></a>
-          <a href="#"
+          <a
             >SMM/таргет<img
               class="arrow-img"
               src="../images/cases-arrow.png"
@@ -256,7 +257,7 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut lab...
             </p>
-            <a href="#"
+            <a
               >Детальніше
               <img
                 class="arrow-img"
@@ -273,7 +274,7 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut lab...
             </p>
-            <a href="#"
+            <a
               >Детальніше<img
                 class="arrow-img"
                 src="../images/cases-arrow.png"
@@ -295,25 +296,25 @@
           reprehenderit.
         </p>
         <div class="arrows">
-          <a href="#"
+          <a
             >SEO<img
               class="arrow-img"
               src="../images/cases-arrow.png"
               alt="cases-arrow"
           /></a>
-          <a href="!#"
+          <a
             >Контекст сайтів<img
               class="arrow-img"
               src="../images/cases-arrow.png"
               alt="cases-arrow"
           /></a>
-          <a href="#"
+          <a
             >SMM<img
               class="arrow-img"
               src="../images/cases-arrow.png"
               alt="cases-arrow"
           /></a>
-          <a href="#"
+          <a
             >Таргет<img
               class="arrow-img"
               src="../images/cases-arrow.png"
@@ -353,7 +354,7 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut lab...
             </p>
-            <a href="#"
+            <a
               >Детальніше
               <img
                 class="arrow-img"
@@ -370,7 +371,7 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut lab...
             </p>
-            <a href="#"
+            <a
               >Детальніше<img
                 class="arrow-img"
                 src="../images/cases-arrow.png"
@@ -695,6 +696,7 @@ export default {
   font-weight: 400;
   color: #000000;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .arrow-img {
@@ -731,6 +733,7 @@ export default {
   text-align: center;
   position: relative;
   display: inline-block;
+  cursor: pointer;
 }
 
 .order-link a {
@@ -809,6 +812,7 @@ export default {
   font-size: 14px;
   color: #828282;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .promotion-tools {
