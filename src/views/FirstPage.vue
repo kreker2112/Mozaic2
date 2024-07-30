@@ -151,15 +151,16 @@
             alt="mosaicpart"
             class="mosaic-part"
           />
-
-          <div class="callback__container">
-            <input
-              class="callback-number"
-              type="text"
-              placeholder="номер телефону"
-            />
-            <button class="callback-button">ЗАМОВИТИ ДЗВІНОК</button>
-          </div>
+        </div>
+        <div class="callback__container">
+          <input
+            v-model="callbackNumber"
+            class="callback-number"
+            placeholder="номер телефону"
+          />
+          <button class="callback-button" @click="submitCallbackRequest">
+            ЗАМОВИТИ ДЗВІНОК
+          </button>
         </div>
         <img src="../images/cases.png" alt="cases" class="cases" />
         <img src="../images/services.png" alt="services" class="services" />
@@ -385,6 +386,7 @@ export default {
     const submenuOpen = ref("");
     const activeMenu = ref(null);
     const router = useRouter();
+    const callbackNumber = ref("");
 
     const updateIsVerticalLayout = () => {
       const width = window.innerWidth;
@@ -502,6 +504,13 @@ export default {
       router.push({ name: "services-page", query: { section } });
     };
 
+    const submitCallbackRequest = () => {
+      const numberForFetch = callbackNumber.value;
+
+      console.log(numberForFetch);
+      // send request
+    };
+
     return {
       openMenu,
       closeMenu,
@@ -515,6 +524,7 @@ export default {
       onScroll,
       navigateToSection,
       navigateToSecondPage,
+      submitCallbackRequest,
     };
   },
 };
@@ -773,7 +783,8 @@ export default {
   background-size: cover;
   background-position: center;
   width: 76rem;
-  z-index: 1;
+  height: 100%;
+  z-index: 0;
   position: sticky;
   top: 0;
 }
@@ -788,13 +799,13 @@ export default {
 
 .callback__container {
   position: absolute;
-  bottom: 0.5rem;
+  margin-bottom: 7rem;
   left: 7rem;
   display: flex;
   flex-direction: row;
   gap: 1.5rem;
   padding: 1rem;
-  z-index: 30000;
+  z-index: 1000;
 }
 
 .callback-number {
@@ -805,7 +816,7 @@ export default {
   padding: 0.5rem;
   outline: none;
   font-size: 1rem;
-  z-index: 30000;
+  z-index: 1000;
 }
 
 .callback-number::placeholder {
@@ -822,7 +833,7 @@ export default {
   font-weight: 900;
   font-size: 1rem;
   cursor: pointer;
-  z-index: 30000;
+  z-index: 1000;
 }
 
 .callback-button:hover {
@@ -1048,7 +1059,7 @@ export default {
     width: 114rem;
   }
   .callback__container {
-    bottom: 6rem;
+    bottom: 12rem;
     left: 6rem;
     gap: 2rem;
   }
@@ -1121,7 +1132,7 @@ export default {
     width: 114rem;
   }
   .callback__container {
-    bottom: 6rem;
+    bottom: 12rem;
     left: 6rem;
     gap: 2rem;
   }
@@ -1227,7 +1238,7 @@ export default {
   .left-section__middle {
     width: 331.5rem;
     top: 43rem;
-    left: 59rem;
+    left: 22rem;
     height: 30.35vh;
   }
   .services-content__container {
@@ -1300,7 +1311,7 @@ export default {
   .left-section__middle {
     width: 331.5rem;
     top: 43rem;
-    left: 59rem;
+    left: 21rem;
     height: 30.2vh;
   }
   .services-content__container {
@@ -1373,7 +1384,7 @@ export default {
   .left-section__middle {
     width: 332rem;
     top: 42.5rem;
-    left: 58.5rem;
+    left: 21rem;
     height: 30.4vh;
   }
   .services-content__container {
@@ -1446,7 +1457,7 @@ export default {
   .left-section__middle {
     width: 332rem;
     top: 42.5rem;
-    left: 58.5rem;
+    left: 20.2rem;
     height: 30.28vh;
   }
   .services-content__container {
@@ -1519,7 +1530,7 @@ export default {
   .left-section__middle {
     width: 347.38rem;
     top: 31.3rem;
-    left: 43rem;
+    left: -37.5rem;
     height: 30.2vh;
   }
   .services-content__container {
@@ -1592,7 +1603,7 @@ export default {
   .left-section__middle {
     width: 347.38rem;
     top: 31.3rem;
-    left: 43rem;
+    left: -38.5rem;
     height: 30vh;
   }
   .services-content__container {
@@ -1778,7 +1789,7 @@ export default {
     width: 54rem;
   }
   .callback__container {
-    bottom: 1.9rem;
+    bottom: 1rem;
     left: 4rem;
     gap: 2rem;
   }
@@ -1811,7 +1822,7 @@ export default {
   .left-section__middle {
     width: 271.4rem;
     top: 31.7rem;
-    left: 43rem;
+    left: 0.75rem;
     height: 30.3vh;
   }
   .services-content__container {
@@ -1851,7 +1862,7 @@ export default {
     width: 54rem;
   }
   .callback__container {
-    bottom: 1.9rem;
+    bottom: 0.5rem;
     left: 4rem;
     gap: 2rem;
   }
@@ -1884,7 +1895,7 @@ export default {
   .left-section__middle {
     width: 271.4rem;
     top: 31.7rem;
-    left: 43rem;
+    left: 0.1rem;
     height: 30.15vh;
   }
   .services-content__container {
@@ -1924,7 +1935,7 @@ export default {
     width: 51rem;
   }
   .callback__container {
-    bottom: 1.9rem;
+    bottom: 1rem;
     left: 4rem;
     gap: 2rem;
   }
@@ -1957,7 +1968,7 @@ export default {
   .left-section__middle {
     width: 274.25rem;
     top: 29.75rem;
-    left: 40rem;
+    left: -9.2rem;
     height: 30.15vh;
   }
   .services-content__container {
@@ -1997,7 +2008,7 @@ export default {
     width: 43.8rem;
   }
   .callback__container {
-    bottom: 1.6rem;
+    bottom: -1rem;
     left: 4rem;
     gap: 2rem;
   }
@@ -2030,7 +2041,7 @@ export default {
   .left-section__middle {
     width: 215.1rem;
     top: 25.6rem;
-    left: 35rem;
+    left: 3.5rem;
     height: 30.38vh;
   }
   .services-content__container {
@@ -2070,7 +2081,7 @@ export default {
     width: 43.8rem;
   }
   .callback__container {
-    bottom: 1.6rem;
+    bottom: -1rem;
     left: 4rem;
     gap: 2rem;
   }
@@ -2103,7 +2114,7 @@ export default {
   .left-section__middle {
     width: 215.1rem;
     top: 25.6rem;
-    left: 35rem;
+    left: 3rem;
     height: 30.2vh;
   }
   .services-content__container {
@@ -2157,7 +2168,7 @@ export default {
     width: 44.8rem;
   }
   .callback__container {
-    bottom: 1.6rem;
+    bottom: -1rem;
     left: 4rem;
     gap: 2rem;
   }
@@ -2190,7 +2201,7 @@ export default {
   .left-section__middle {
     width: 215.95rem;
     top: 26.1rem;
-    left: 35.5rem;
+    left: 5.5rem;
     height: 31.1vh;
   }
   .services-content__container {
@@ -2244,7 +2255,7 @@ export default {
     width: 44.8rem;
   }
   .callback__container {
-    bottom: 1.6rem;
+    bottom: -1rem;
     left: 4rem;
     gap: 2rem;
   }
@@ -2277,7 +2288,7 @@ export default {
   .left-section__middle {
     width: 215.95rem;
     top: 26.1rem;
-    left: 35.5rem;
+    left: 4.9rem;
     height: 30.9vh;
   }
   .services-content__container {
@@ -2331,7 +2342,7 @@ export default {
     width: 54.1rem;
   }
   .callback__container {
-    bottom: 1.5rem;
+    bottom: -0.1rem;
     left: 5rem;
     gap: 2rem;
   }
@@ -2364,7 +2375,7 @@ export default {
   .left-section__middle {
     width: 220.1rem;
     top: 31.5rem;
-    left: 43.2rem;
+    left: 27.2rem;
     height: 31.5vh;
   }
   .services-content__container {
@@ -2418,7 +2429,7 @@ export default {
     width: 54.1rem;
   }
   .callback__container {
-    bottom: 1.5rem;
+    bottom: -0.1rem;
     left: 5rem;
     gap: 2rem;
   }
@@ -2451,7 +2462,7 @@ export default {
   .left-section__middle {
     width: 220.1rem;
     top: 31.5rem;
-    left: 43.2rem;
+    left: 26.9rem;
     height: 31.4vh;
   }
   .services-content__container {
@@ -2505,7 +2516,7 @@ export default {
     width: 37.4rem;
   }
   .callback__container {
-    bottom: 1.2rem;
+    bottom: -2rem;
     left: 2.2rem;
     gap: 2rem;
   }
@@ -2538,7 +2549,7 @@ export default {
   .left-section__middle {
     width: 220.3rem;
     top: 21.7rem;
-    left: 29.8rem;
+    left: -15rem;
     height: 31.3vh;
   }
   .services-content__container {
@@ -2591,7 +2602,7 @@ export default {
     width: 37.4rem;
   }
   .callback__container {
-    bottom: 1.2rem;
+    bottom: -2rem;
     left: 2.2rem;
     gap: 2rem;
   }
@@ -2624,7 +2635,7 @@ export default {
   .left-section__middle {
     width: 220.3rem;
     top: 21.7rem;
-    left: 29.8rem;
+    left: -15.6rem;
     height: 31.1vh;
   }
   .services-content__container {
