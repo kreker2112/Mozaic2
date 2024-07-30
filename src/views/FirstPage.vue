@@ -227,40 +227,25 @@
           <div class="left-section__middle">
             <div class="middle-row">
               <img
+                @click.prevent="navigateToSection('consulting-marketing')"
                 src="../images/services-marketing.png"
                 alt="marketing"
                 class="marketing"
               />
               <img
+                @click.prevent="navigateToSection('analytics')"
                 src="../images/analytics.png"
                 alt="analytics"
                 class="analytics"
               />
-
-              <img src="../images/design.png" alt="design" class="design" />
-
               <img
-                src="../images/socialMedia.png"
-                alt="socialMedia"
-                class="social-media"
-              />
-
-              <img src="../images/aboutUs.png" alt="aboutUs" class="about-us" />
-
-              <img
-                src="../images/services-marketing.png"
-                alt="marketing"
-                class="marketing"
+                @click.prevent="navigateToSection('design')"
+                src="../images/design.png"
+                alt="design"
+                class="design"
               />
               <img
-                src="../images/analytics.png"
-                alt="analytics"
-                class="analytics"
-              />
-
-              <img src="../images/design.png" alt="design" class="design" />
-
-              <img
+                @click.prevent="navigateToSection('promotion')"
                 src="../images/socialMedia.png"
                 alt="socialMedia"
                 class="social-media"
@@ -394,11 +379,13 @@ export default {
   components: {
     FooterComponent,
   },
-  name: "SecondPage",
+  name: "FirstPage",
   setup() {
     const isMenuOpen = ref(false);
     const submenuOpen = ref("");
     const activeMenu = ref(null);
+    const router = useRouter();
+
     const updateIsVerticalLayout = () => {
       const width = window.innerWidth;
       const height = window.innerHeight;
@@ -507,10 +494,12 @@ export default {
       window.removeEventListener("resize", handleResize);
     });
 
-    const router = useRouter();
-
     const navigateToSecondPage = () => {
       router.push({ name: "lasergood-page" });
+    };
+
+    const navigateToSection = (section) => {
+      router.push({ name: "services-page", query: { section } });
     };
 
     return {
@@ -524,6 +513,7 @@ export default {
       isMenuOpen,
       activeMenu,
       onScroll,
+      navigateToSection,
       navigateToSecondPage,
     };
   },

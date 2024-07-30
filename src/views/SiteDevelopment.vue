@@ -512,6 +512,7 @@ export default {
   font-family: "Montserrat";
   font-size: 14px;
   font-weight: 500;
+  cursor: default;
 }
 
 .card-development__info {
@@ -708,5 +709,6 @@ input {
 input::placeholder {
   color: #2b2b2b;
   font-style: italic;
+  opacity: 0.7;
 }
 </style>

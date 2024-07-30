@@ -10,11 +10,13 @@
       ПРОБЛЕМУ В 1 КЛІК
     </div>
     <div class="center">
-      <a href="#!">ПРО НАС</a>
-      <a href="#!">МАРКЕТИНГ</a>
-      <a href="#!">АНАЛІТИКА</a>
-      <a href="#!">ДИЗАЙН</a>
-      <a href="#!">ПРОСУВАННЯ</a>
+      <a>ПРО НАС</a>
+      <a @click.prevent="navigateToSection('consulting-marketing')"
+        >МАРКЕТИНГ</a
+      >
+      <a @click.prevent="navigateToSection('analytics')">АНАЛІТИКА</a>
+      <a @click.prevent="navigateToSection('design')">ДИЗАЙН</a>
+      <a @click.prevent="navigateToSection('promotion')">ПРОСУВАННЯ</a>
     </div>
     <div class="right">
       <a href="#!"><img src="../images/logos/facebook.png" alt="facebook" /></a>
@@ -27,7 +29,16 @@
 </template>
 
 <script>
-export default {};
+import { useRouter } from "vue-router";
+export default {
+  setup() {
+    const router = useRouter();
+    const navigateToSection = (section) => {
+      router.push({ name: "services-page", query: { section } });
+    };
+    return { navigateToSection };
+  },
+};
 </script>
 
 <style scoped>
@@ -76,6 +87,7 @@ export default {};
   position: relative;
   font-family: "Montserrat";
   font-size: 80%;
+  cursor: pointer;
 }
 
 .right {

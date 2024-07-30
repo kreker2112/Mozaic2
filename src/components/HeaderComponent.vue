@@ -2,18 +2,22 @@
   <header class="header">
     <div class="container">
       <div class="logo">
-        <img
-          src="../images/header-logo.png"
-          alt="header-logo"
-          class="header-logo"
-        />
+        <router-link to="/">
+          <img
+            src="../images/header-logo.png"
+            alt="header-logo"
+            class="header-logo"
+          />
+        </router-link>
       </div>
       <nav class="nav">
         <ul class="nav-list">
           <li class="nav-list__item">
             <router-link to="/services">Послуги</router-link>
           </li>
-          <li class="nav-list__item"><a href="#!">Брифи</a></li>
+          <li class="nav-list__item">
+            <a><router-link to="/brief">Брифи</router-link></a>
+          </li>
           <li class="nav-list__item"><a href="#!">Контакти</a></li>
         </ul>
       </nav>
@@ -41,6 +45,10 @@ export default {};
   height: 80px;
   display: flex;
   align-items: center;
+}
+
+.header-logo {
+  cursor: pointer;
 }
 
 .container {

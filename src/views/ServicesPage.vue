@@ -498,6 +498,7 @@
 <script>
 import HeaderComponent from "../components/HeaderComponent";
 import SecondFooter from "../components/SecondFooter";
+import { useRoute } from "vue-router";
 
 export default {
   name: "ServicesPage",
@@ -558,6 +559,12 @@ export default {
       console.log("Making Form Data:", makingFormData);
       // Здесь вы можете отправить данные на сервер
     },
+  },
+  mounted() {
+    const route = useRoute();
+    if (route.query.section) {
+      this.selectedSection = route.query.section;
+    }
   },
 };
 </script>

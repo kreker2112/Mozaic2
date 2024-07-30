@@ -20,6 +20,7 @@ const routes = [
     path: "/services/",
     name: "services-page",
     component: ServicesPage,
+    props: (route) => ({ section: route.query.section }),
   },
   {
     path: "/development/",
