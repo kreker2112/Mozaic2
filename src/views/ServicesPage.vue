@@ -504,7 +504,7 @@ export default {
   name: "ServicesPage",
   components: {
     HeaderComponent,
-    SecondFooter, // Проверьте правильность пути и наличие этого компонента
+    SecondFooter,
   },
   data() {
     return {
@@ -540,7 +540,6 @@ export default {
         phone: this.contactPhone,
       };
       console.log("Contact Form Data:", contactData);
-      // Здесь вы можете отправить данные на сервер
     },
     toggleService(service) {
       const index = this.selectedServices.indexOf(service);
@@ -557,7 +556,6 @@ export default {
         services: this.selectedServices,
       };
       console.log("Making Form Data:", makingFormData);
-      // Здесь вы можете отправить данные на сервер
     },
   },
   mounted() {

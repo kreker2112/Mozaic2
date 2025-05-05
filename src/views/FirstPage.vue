@@ -392,7 +392,6 @@ export default {
       const width = window.innerWidth;
       const height = window.innerHeight;
 
-      // Определение для мобильного меню
       return (
         (width === 1024 && height === 1366) ||
         (width === 820 && height === 1180) ||
@@ -508,7 +507,6 @@ export default {
       const numberForFetch = callbackNumber.value;
 
       console.log(numberForFetch);
-      // send request
     };
 
     return {
@@ -542,7 +540,6 @@ export default {
   cursor: pointer;
 }
 
-/* Styles for desktop menu */
 .desktop-menu {
   position: fixed;
   top: 0;
@@ -769,8 +766,6 @@ export default {
 .footer-text {
   text-align: center;
 }
-
-/* Page-content */
 
 .main-content__container {
   position: relative;
@@ -1012,7 +1007,6 @@ export default {
   width: 25%;
 }
 
-/* Скрыть скроллбары для всех браузеров */
 ::-webkit-scrollbar {
   width: 0px;
   height: 0px;

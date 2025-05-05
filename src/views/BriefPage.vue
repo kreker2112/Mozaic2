@@ -272,7 +272,7 @@ export default {
         };
       }
       console.log("Form submitted", formData);
-      // отправка данных на сервер
+
       // axios.post('/submit', formData)
       //   .then(response => console.log(response))
       //   .catch(error => console.error(error));
